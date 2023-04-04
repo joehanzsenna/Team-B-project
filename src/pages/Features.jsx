@@ -1,14 +1,14 @@
 import React from 'react'
 // import NavBar from '../components/NavBar'
 
-const HomePage = () => {
+const Features = () => {
   return (
     <div>
         {/* <NavBar/> */}
-        <h1>This is the Home page</h1>
+        <h1>This is the Features page</h1>
 
     </div>
   )
 }
 
-export default HomePage
+export default Features

@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import logo from '../assets/Bookers logo.svg'
 
 const NavBar = () => {
   return (
     <div className='Nav'>
         <div className='Nav-items'> 
           <div>
-            logo
+            <img src={logo} alt="" />
           </div>
           <ul>
               <li><Link to='/' className='link'>Home</Link></li>
-              <li><Link to='/contacts' className='link'>Contacts</Link></li>
-              <li><Link to='/about' className='link'>About Us</Link></li>
-              <li><Link to='/blog' className='link'>Blog</Link></li>
-              <li><Link to='/general' className='link'>General</Link></li>
+              <li><Link to='/about' className='link'>About</Link></li>
+              <li><Link to='/features' className='link'>Features</Link></li>
+              <li ><Link to='/started' id='started' className='link'>Get Started</Link></li>
           </ul>
         </div>
     </div>

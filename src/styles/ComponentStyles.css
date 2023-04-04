@@ -5,38 +5,46 @@
 }
 .Nav{
     width: 100%;
-    background: linear-gradient(to left, orange,darkorange,gold);
+    background: #fff;
+    box-shadow: 4px 4px 4px;
     height: auto;
 }
 .Nav-items{
-    width: 90%;
+    width: 95%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-items: center;
+
 }
 
 ul {
     display: grid;
     list-style-type: none;
     grid-template-columns: repeat(5,1fr);
-    justify-items: center;
+    justify-items: end;
     align-items: center;
-    place-items: center;
     cursor: pointer;
     justify-self: end;
     grid-column-gap: 1rem;
 }
 ul li ,.link{
-    padding: .5rem 1rem;
-    background-color: white;
     margin: 1rem 0;
-    border-radius: 4px;
     text-decoration: none;
-    color: orange;
+    color: #000;
+    font-size: 1.2rem;
+}
+ul li:last-child{
+    
+}
+#started{
+    background-color: blue;
+    color: white !important;
+    padding: .5rem;
+    border-radius: 4px;
 }
 ul li ,.link:hover{
-    color: red;
+    color: rgb(50, 50, 226);
 }
 /* .link{
     text-decoration: none;
