@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import Features from './pages/Features.jsx'
 import Started from './pages/Started'
+import './styles/HomePage.css'
 
 
 function App() {
