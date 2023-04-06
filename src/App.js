@@ -6,6 +6,8 @@ import AboutPage from './pages/AboutPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import Features from './pages/Features.jsx'
 import Started from './pages/Started'
+import Signup from './components/Auth/Signup';
+import Login from './components/Auth/Login';
 
 
 function App() {
@@ -13,12 +15,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <NavBar/>
+      {/* <NavBar/> */}
       <Routes>
-        <Route index element ={<HomePage/>}/>
-        <Route path="about" element ={<AboutPage/> }/>
-        <Route path="features" element ={<Features/>}/>
-        <Route path="started" element ={<Started/>}/>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path="/about" element ={<AboutPage/> }/>
+        <Route path="/features" element ={<Features/>}/>
+        <Route path="/started" element ={<Started/>}/>
+        <Route path="/signup" element ={<Signup/>}/>
+        <Route path="/login" element ={<Login/>}/>
         
       </Routes>
       </BrowserRouter>

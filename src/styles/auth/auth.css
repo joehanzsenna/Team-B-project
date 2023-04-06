@@ -1,0 +1,38 @@
+/* .Nav{
+display:none;
+} */
+
+.line{
+    background-color: rgba(0, 0, 0, 0.1);
+    /* position: relative; */
+    height: 2px;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+
+}
+.signupcon{
+    /* width: 40%; */
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    max-width: 500px;
+}
+.show{
+    position: absolute;
+    right: 62%;
+    top: 6px;
+}
+.eyediv{
+    position: relative;
+}
+.or{
+    background-color:white;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
