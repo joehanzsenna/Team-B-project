@@ -8,6 +8,7 @@ import Features from './pages/Features.jsx'
 import Started from './pages/Started'
 import Signup from './components/Auth/Signup';
 import Login from './components/Auth/Login';
+import Index from './pages/dashboard/Index';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/started" element ={<Started/>}/>
         <Route path="/signup" element ={<Signup/>}/>
         <Route path="/login" element ={<Login/>}/>
+        <Route path="/dashboard" element ={<Index/>}/>
         
       </Routes>
       </BrowserRouter>
