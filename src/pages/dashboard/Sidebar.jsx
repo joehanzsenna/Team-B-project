@@ -8,7 +8,10 @@ import people from '../../assets/people.png'
 const Sidebar = () => {
   return (
     <div className='sidebar-container '>
-      <img src={booklogo} alt="" />
+      <div className="logo-container">
+      <img src={booklogo} alt="" className='sidebar-logo' />
+
+      </div>
       <div className="features-icons d-flex">
         <img src={windows} alt="" />
         <img src={bookmark} alt="" />

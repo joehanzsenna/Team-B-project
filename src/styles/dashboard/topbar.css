@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-.topbar-container{
-    /* background-color: rgba(255, 255, 255, 1); */
-    background-color: palevioletred;
+
+.general{
     margin-left: 124px;
+
+}
+
+.topbar-container{
+    background-color: rgba(255, 255, 255, 1);
 }
 .search-icon{
     /* width: ; */
@@ -33,8 +37,7 @@
     color: rgba(59, 60, 61, 1);
 }
 .search-options input{
-    /*width: 100%;
-    */width: 350px;
+    width: 350px;
     font-size: 13px;
     padding: 5px 10px 5px 28px;
     border-radius: 10px;

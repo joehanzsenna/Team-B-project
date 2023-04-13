@@ -7,7 +7,7 @@ import "../../styles/dashboard/topbar.css";
 import profilePicture from "../../assets/Ellipse 23.png";
 const Topbar = () => {
   return (
-    <div className=" topbar-container ">
+    <div className=" topbar-container general">
       <div className="d-flex justify-content-around align-items-center ">
         <header className="fs-5 header-text">Dashboard</header>
         <div className="search-container d-flex align-items-center">
