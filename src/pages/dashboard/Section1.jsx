@@ -6,12 +6,12 @@ const Section1 = () => {
   return (
     <div className="general mt-4  ">
       <div className="section1-container d-flex justify-content-around gap-5 container align-items-center">
-      <div className="discover-content d-flex justify-content-center">
+      <div className="discover-content d-flex justify-content-between gap-5">
         <div className="discover-text">
-          <h2 className="">
+          <p className="discover-header">
             Discover the Most Trending Books this Week
-          </h2>
-          <p>
+          </p>
+          <p className="lorem-discover">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             aliquam repellat ut est, fugit enim provident quas?
           </p>
@@ -23,9 +23,10 @@ const Section1 = () => {
        <img src={girl} alt="" />
        </div>
       </div>
-      <div>
-        <h5>Join a vibrant community of over 3000 passionate book lovers</h5>
-        <button className="join">Join Now</button>
+      <div className="vibrant-community">
+        <div className="opacity"></div>
+        <div className="inner-content"><h5>Join a vibrant community of over 3000 passionate book lovers</h5>
+        <button className="join">Join Now</button></div>
       </div>
       </div>
     </div>

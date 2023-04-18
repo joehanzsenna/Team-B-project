@@ -5,9 +5,12 @@
     margin-left: 124px;
 
 }
+/* .second-container{
 
+} */
 .topbar-container{
     background-color: rgba(255, 255, 255, 1);
+
 }
 .search-icon{
     /* width: ; */
@@ -35,6 +38,7 @@
     font-size: 28px;
     font-weight: 700;
     color: rgba(59, 60, 61, 1);
+    /* margin-left: 45px; */
 }
 .search-options input{
     width: 350px;

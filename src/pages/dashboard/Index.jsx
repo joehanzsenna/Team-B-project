@@ -5,7 +5,7 @@ import Topbar from './Topbar'
 
 const Index = () => {
   return (
-    <div className='container-xxl position-relative'>
+    <div className='container-xxl position-relative index-container'>
         <Topbar/>
         <Sidebar/>
         <Section1/>

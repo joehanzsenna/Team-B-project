@@ -8,7 +8,8 @@ import profilePicture from "../../assets/Ellipse 23.png";
 const Topbar = () => {
   return (
     <div className=" topbar-container general">
-      <div className="d-flex justify-content-around align-items-center ">
+      <div className="container second-container">
+      <div className="d-flex justify-content-between align-items-center ">
         <header className="fs-5 header-text">Dashboard</header>
         <div className="search-container d-flex align-items-center">
           <div className="search-options d-flex align-items-center">
@@ -25,6 +26,7 @@ const Topbar = () => {
           <p className="profile-name mt-3">Alexandra Dayo</p>
           <AiOutlineDown className="down-icon " />
         </div>
+      </div>
       </div>
     </div>
   );
