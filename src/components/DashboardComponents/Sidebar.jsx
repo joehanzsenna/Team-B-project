@@ -14,7 +14,7 @@ const Sidebar = () => {
       </div>
       <div className="features-icons d-flex">
         <img src={windows} alt="" />
-        <Link to='/mybooks' className="w-100" ><img src={bookmark} alt="" /></Link>
+        <img src={bookmark} alt="" />
         <img src={people} alt="" />
       </div>
     </div>
