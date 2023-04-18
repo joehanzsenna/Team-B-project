@@ -1,15 +1,13 @@
 import React from 'react'
 import Section1 from '../components/DashboardComponents/Section1'
-import Sidebar from '../components/DashboardComponents/Sidebar'
-import Topbar from '../components/DashboardComponents/Topbar'
+import DashboardLayout from '../components/DashboardLayout'
 
 const Dashboard = () => {
   return (
-    <div className='container-xxl position-relative index-container'>
-        <Topbar/>
-        <Sidebar/>
-        <Section1/>
-    </div>
+   
+    <DashboardLayout>
+     <Section1/>
+   </DashboardLayout>
   )
 }
 
