@@ -9,6 +9,7 @@ import Started from './pages/Started'
 import Signup from './components/Auth/Signup';
 import Login from './components/Auth/Login';
 import Index from './pages/dashboard/Index';
+import Books from './pages/dashboard/myBooks/Books';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/signup" element ={<Signup/>}/>
         <Route path="/login" element ={<Login/>}/>
         <Route path="/dashboard" element ={<Index/>}/>
+        <Route path="/mybooks" element ={<Books/>}/>
         
       </Routes>
       </BrowserRouter>
