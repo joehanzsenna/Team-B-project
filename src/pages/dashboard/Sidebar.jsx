@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/dashboard/sidebar.css";
 import booklogo from "../../assets/logos_growth-book-icon.png";
 import windows from "../../assets/frame.png";

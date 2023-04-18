@@ -24,7 +24,6 @@ const Section1 = () => {
        </div>
       </div>
       <div className="vibrant-community">
-        <div className="opacity"></div>
         <div className="inner-content"><h5>Join a vibrant community of over 3000 passionate book lovers</h5>
         <button className="join">Join Now</button></div>
       </div>

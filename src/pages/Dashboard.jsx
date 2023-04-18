@@ -1,13 +1,16 @@
 import React from 'react'
 import Section1 from '../components/DashboardComponents/Section1'
-import DashboardLayout from '../components/DashboardLayout'
+import Section2 from '../components/DashboardComponents/Section2'
+import DashboardLayout from '../components/layout/DashboardLayout'
 
 const Dashboard = () => {
   return (
-   
-    <DashboardLayout>
-     <Section1/>
-   </DashboardLayout>
+    <div className="container">
+      <DashboardLayout >
+        <Section1/>
+        <Section2/>
+    </DashboardLayout>
+    </div>
   )
 }
 

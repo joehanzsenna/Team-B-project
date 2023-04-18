@@ -25,13 +25,14 @@
 }
 
 .vibrant-community {
-  background-color: green;
-  height: 100%;
+  background-image: url(../../assets/Frame\ 238\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
   border-radius: 10px;
   text-align: center;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .opacity {
