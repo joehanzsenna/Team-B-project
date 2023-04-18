@@ -1,24 +1,24 @@
-import React from 'react'
-import '../../styles/dashboard/sidebar.css'
-import booklogo from '../../assets/logos_growth-book-icon.png'
-import windows from '../../assets/frame.png'
-import bookmark from '../../assets/book.png'
-import people from '../../assets/people.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../styles/dashboard/sidebar.css";
+import booklogo from "../../assets/logos_growth-book-icon.png";
+import windows from "../../assets/frame.png";
+import bookmark from "../../assets/book.png";
+import people from "../../assets/people.png";
 
 const Sidebar = () => {
   return (
-    <div className='sidebar-container '>
+    <div className="sidebar-container ">
       <div className="logo-container">
-      <img src={booklogo} alt="" className='sidebar-logo' />
-
+        <img src={booklogo} alt="" className="sidebar-logo" />
       </div>
       <div className="features-icons d-flex">
         <img src={windows} alt="" />
-        <img src={bookmark} alt="" />
+        <Link to='/mybooks' className="w-100" ><img src={bookmark} alt="" /></Link>
         <img src={people} alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
