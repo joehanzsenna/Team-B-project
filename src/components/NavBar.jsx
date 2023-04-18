@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import logo from '../assets/Bookers logo.svg'
+import logo from '../assets/HomePageImages/Bookers logo.svg'
 
 const NavBar = () => {
   return (
@@ -12,7 +12,6 @@ const NavBar = () => {
           <ul>
               <li><Link to='/' className='link'>Home</Link></li>
               <li><Link to='/about' className='link'>About</Link></li>
-              <li><Link to='/features' className='link'>Features</Link></li>
               <li><Link to='/started' id='started' className='link'>Get Started</Link></li>
           </ul>
         </div>

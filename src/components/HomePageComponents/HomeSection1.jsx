@@ -1,5 +1,5 @@
 import React from 'react'
-import girlPic from '../../assets/girl-reading.svg'
+import girlPic from '../../assets/HomePageImages/girl-reading.svg'
 
 const HomeSection1 = () => {
   return (
