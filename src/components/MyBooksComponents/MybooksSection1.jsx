@@ -6,7 +6,7 @@ import {BsFillSuitHeartFill} from 'react-icons/bs'
 
 const MybooksSection1 = () => {
   const [pics] = useState(MybooksImages)
-  const [whenActive, setWhenActive] = useState(1)
+  const [whenActive, setWhenActive] = useState(0)
 
   const toggle = (index) => {
       setWhenActive(index)
