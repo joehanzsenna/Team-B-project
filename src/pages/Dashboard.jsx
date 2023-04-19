@@ -6,10 +6,11 @@ import DashboardLayout from '../components/layout/DashboardLayout'
 const Dashboard = () => {
   return (
     <div className="container">
-      <DashboardLayout >
-        <Section1/>
-        <Section2/>
-    </DashboardLayout>
+      <DashboardLayout>
+          <Section1/>
+          
+          {/* <Section2/> */}
+      </DashboardLayout>
     </div>
   )
 }

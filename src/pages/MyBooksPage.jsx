@@ -1,15 +1,15 @@
 import React from 'react'
-import DashboardLayout from '../components/DashboardLayout'
-import Section1 from '../components/DashboardComponents/Section1'
+import DashboardLayout from '../components/layout/DashboardLayout'
+import MybooksSection1 from '../components/MyBooksComponents/MybooksSection1'
+
 
 const MyBooksPage = () => {
   return (
     <div>
         <DashboardLayout>
-            <Section1/>
+          <MybooksSection1/>
         </DashboardLayout>
     </div>
   )
 }
-
 export default MyBooksPage

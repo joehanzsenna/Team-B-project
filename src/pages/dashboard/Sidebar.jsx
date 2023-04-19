@@ -13,7 +13,10 @@ const Sidebar = () => {
       </div>
       <div className="features-icons d-flex">
         <img src={windows} alt="" />
-        <img src={bookmark} alt="" />
+        <Link to='/mybookspage' >
+          <img src={bookmark} alt="" />
+        </Link>
+       
         <img src={people} alt="" />
       </div>
     </div>
