@@ -13,9 +13,15 @@ const Sidebar = () => {
         <img src={booklogo} alt="" className="sidebar-logo" />
       </div>
       <div className="features-icons d-flex">
-        <img src={windows} alt="" />
-        <img src={bookmark} alt="" />
-        <img src={people} alt="" />
+        <Link to='/dashboard'>
+          <img src={windows} alt="" className="sidebarIcons"/>
+        </Link>
+
+        <Link to='/mybookspage'>
+          <img src={bookmark} alt="" className="sidebarIcons"/>
+        </Link>
+
+        <img src={people} alt="" className="sidebarIcons" />
       </div>
     </div>
   );

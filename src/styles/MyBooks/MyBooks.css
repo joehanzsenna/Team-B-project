@@ -68,7 +68,11 @@
     color: #3FB2E5;
     font-size: 1.3rem;
 }
-
+.linkStyle{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
 @media (max-width: 1000px){
     .MybooksSection1-cards{
         width: 100%;

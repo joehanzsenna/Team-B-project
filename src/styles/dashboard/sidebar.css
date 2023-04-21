@@ -15,8 +15,12 @@
     justify-content: center;
     margin-top: 80%;
 }
-.features-icons img{
-    width: 20%;
+/* .features-icons img{
+    
+} */
+.sidebarIcons{
+    cursor: pointer;
+    width: 2rem;
 }
 .logo-container{
     margin-top: 20px;

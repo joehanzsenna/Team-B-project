@@ -1,6 +1,6 @@
 import React from 'react'
-import DashboardLayout from '../components/layout/DashboardLayout'
-import MybooksSection1 from '../components/MyBooksComponents/MybooksSection1'
+import DashboardLayout from '../../components/layout/DashboardLayout'
+import MybooksSection1 from '../../components/MyBooksComponents/MybooksSection1'
 
 
 const MyBooksPage = () => {
