@@ -4,7 +4,7 @@ import logo from '../assets/HomePageImages/Bookers logo.svg'
 
 const NavBar = () => {
   return (
-    <div className='Nav'>
+    <div className='Nav container-xxl'>
         <div className='Nav-items'> 
           <div>
             <img src={logo} alt="" className='main-logo'/>
