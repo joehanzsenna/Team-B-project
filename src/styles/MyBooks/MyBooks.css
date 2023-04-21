@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.btn-2{
+    border: none;
+    background: #3FB2E5;
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
 .MybooksSection1{
     width: 100%;
     height: auto;
@@ -72,6 +81,32 @@
     list-style: none;
     text-decoration: none;
     color: #000;
+}
+
+.ratingModal{
+    /* background: orange; */
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.ratingText{
+    font-size: .8rem;
+}
+.modalStarIcon{
+    font-size: 2rem;
+    color: lightgrey;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.ratingSubmitBtn{
+    background: #3FB2E5;
+    color: #fff;
+    padding: 5px 5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 1.5rem 0;
+
 }
 @media (max-width: 1000px){
     .MybooksSection1-cards{
