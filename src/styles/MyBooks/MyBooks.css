@@ -32,12 +32,35 @@
     font-weight: 500;
 }
 .isActive{
+    /* background-color: #3fb3e548; */
+    /* color: #3FB2E5;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: 1px 4px 10px lightgrey;
+    cursor: pointer;
+    text-decoration: none; */
+}
+.nav-li{
+    font-size: 1.6rem;
+}
+.normal{
+    text-decoration: none;
+    color: #000;
+}
+.normal:hover{
+    color: #000;
+}
+.active {
     color: #3FB2E5;
     background-color: #3fb3e548;
     border-radius: 20px;
     padding: 5px 15px;
     box-shadow: 1px 4px 10px lightgrey;
     cursor: pointer;
+    text-decoration: none;
+}
+.active:hover{
+    color: #3FB2E5;
 }
 
 .MybooksSection1-cards{
