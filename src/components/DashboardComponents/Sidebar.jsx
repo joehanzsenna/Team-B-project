@@ -8,7 +8,7 @@ import people from "../../assets/people.png";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar-container ">
+    <div className="sidebar-container d-none d-lg-block">
       <div className="logo-container">
         <img src={booklogo} alt="" className="sidebar-logo" />
       </div>
