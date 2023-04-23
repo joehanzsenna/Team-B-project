@@ -4,7 +4,7 @@ import '../../styles/dashboard/section1.css'
 
 const Section1 = () => {
   return (
-    <div className=" mt-4 container-fluid ">
+    <div className=" mt-4  ">
       <div className="section1-container d-sm-flex justify-content-around gap-5 container align-items-center">
       <div className="discover-content d-flex justify-content-between align-items-center">
         <div className="discover-text">

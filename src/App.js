@@ -9,8 +9,8 @@ import Started from "./pages/Started";
 import Signup from "./components/Auth/Signup";
 import Login from "./components/Auth/Login";
 import Dashboard from "./pages/Dashboard";
-import axios from 'axios'
-import { useEffect } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
   // const [data, setData] = useState([]);
@@ -20,29 +20,32 @@ function App() {
   //     .then(data => setData(data)).catch(err => console.log(err))
   // }, [])
 
-  useEffect(()=>{
-    axios.get('https://bookapi-3arg.onrender.com/all').then(res=>{
-      console.log(res.data);
-    })
-    .catch(err=>{
-      console.log(err);
-    })
-  })
+  // useEffect(() => {
+  //   axios
+  //     .get("https://bookapi-3arg.onrender.com/all")
+  //     .then((res) => {
+  //       console.log(res);
+  //       setData(res.data);
+  //       console.log(data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
   return (
-   <div> 
+    <div>
       <BrowserRouter>
-       <Routes>
+        <Routes>
           <Route path="/" element={<HomePage />} />
-           <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/features" element={<Features />} />
-           <Route path="/started" element={<Started />} />
-           <Route path="/signup" element={<Signup />} />
+          <Route path="/started" element={<Started />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard/>} />
         </Routes>
-       </BrowserRouter>
-   </div>
+      </BrowserRouter>
+    </div>
   );
-
-  }
+}
 export default App;

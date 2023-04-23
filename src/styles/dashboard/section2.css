@@ -1,0 +1,34 @@
+.popular-container{
+    overflow-x: auto;
+    /* overflow-y: auto; */
+    margin-top: 20px;
+    /* padding-left: 150px; */
+    /* max-height: 300px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid black; */
+    /* gap: 15px; */
+}
+/* .popular-container::-webkit-scrollbar{
+    width: 0;
+} */
+
+.popular-container .eachbook{
+    /* min-width: 200px;
+    width: 200px; */
+    /* height: 100px; */
+    /* display: flex; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    /* line-height: 200px; */
+    /* text-align: center; */
+    background-color: #ffff00;
+    /* margin-right: 5px; */
+    /* padding-left: 50px; */
+
+}
+
+.eachbook img{
+   width: 100%;
+}

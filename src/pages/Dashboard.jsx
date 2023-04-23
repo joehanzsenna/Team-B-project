@@ -6,7 +6,7 @@ import DashboardLayout from "../components/layout/DashboardLayout";
 const Dashboard = () => {
   
   return (
-    <div className="container-sm-fluid">
+    <div className="container-xxl p-0">
       <DashboardLayout>
         <Section1 />
         <Section2 />

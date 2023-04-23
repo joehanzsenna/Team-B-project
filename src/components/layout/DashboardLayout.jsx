@@ -33,10 +33,10 @@ const DashboardLayout = ({ children }) => {
   }, [width]);
 
   return (
-    <div className="overall container-lg">
+    <div className="overall">
       <div className="d-lg-flex">
         <Sidebar />
-        <div className="content-container container-lg ps-lg-5">
+        <div className="content-container ps-lg-4 ">
           <Topbar
             width={width}
             height={height}
