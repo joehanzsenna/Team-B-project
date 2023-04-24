@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/dashboard/section2.css";
+import {AiFillStar, AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 
 const Section2 = () => {
   const [data, setData] = useState([]);
+
+  const book = <>
+  
+  </>
 
   useEffect(() => {
     axios
@@ -20,25 +25,58 @@ const Section2 = () => {
       });
   }, []);
   return (
-    <div className="allbooks-container container">
+    <div className="allbooks-container container-xl">
       <div className="d-flex gap-3 ps-3">
         <p></p>
         <h5>Popular Books</h5>
         <button>View all</button>
       </div>
 
-      <div className="popular-container d-flex justify-content-evenly">
+      <div className="popular-container d-flex justify-content-center gap-3 align-items-center">
         {data.map((each) => {
           if (each.ratings >= 3) {
             return (
               <div className="">
-                <div className="eachbook ps-3 ">
+                <div className="eachbook ">
                <div className="image-container">
                <img src={each.image} alt="" className="" />
                </div>
-               <div className="writeup d-block">
+               <div className="text-center d-flex justify-content-between">
                <p>{each.title}</p>
-                <p>{each.author}</p>
+                <div className="rating-container">
+                  <AiFillStar/>
+                <p>{each.ratings}</p>
+                </div>
+               </div>
+               <div className="price-like-container d-flex justify-content-between">
+                <AiOutlineHeart/>
+                <p>{each.price}</p>
+               </div>
+              </div>
+              </div>
+            );
+          }
+        })}
+      </div>
+      <div className="popular-container d-flex justify-content-center gap-3 align-items-center">
+        {data.map((each) => {
+          if (each.bestselling === true) {
+            return (
+              <div className="">
+                <div className="eachbook ">
+               <div className="image-container">
+               <img src={each.image} alt="" className="" />
+               </div>
+               <div className="text-center d-flex justify-content-between">
+               <p>{each.title}</p>
+                <div className="rating-container">
+                  <AiFillStar/>
+                <p>{each.ratings}</p>
+                </div>
+               </div>
+               <div className="price-like-container d-flex justify-content-between">
+                <AiOutlineHeart/>
+                <p>{each.price}</p>
                </div>
               </div>
               </div>
