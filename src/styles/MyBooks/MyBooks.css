@@ -127,6 +127,12 @@
     margin: 0 .5rem;
     cursor: pointer;
 }
+.modalStarIconBlue{
+    font-size: 2rem;
+    color: #3FB2E5;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
 .ratingSubmitBtn{
     background: #3FB2E5;
     color: #fff;

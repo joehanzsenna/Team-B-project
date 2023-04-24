@@ -35,13 +35,10 @@ const PurchasedBooks = () => {
                 </div>
                 <h6>{name}</h6>
                 <div className='cards-innerPrice'>
-                  {like ? <BsSuitHeartFill name={id} onClick={(e) => {
-                    if (e.currentTarget.name === id) {
-                      setLike(true)
-                    }
-                  }} /> : <BsSuitHeart name={id} onClick={(e) =>
-                    e.currentTarget.name === id ? setLike(true) : setLike(false)
-                  } />}
+                  {like ? <BsSuitHeartFill name={id} onClick={(e) => e.currentTarget.key === id ? setLike(true):setLike(false)} /> : <BsSuitHeart name={id} onClick={(e) => e.currentTarget.key === id ? setLike(false):setLike(true)} />}
+
+                  {/* {like ? <BsSuitHeartFill name={id} onClick={() => setLike(false)} /> : <BsSuitHeart name={id} onClick={() => setLike(true)} />} */}
+
                   <h3>{Like}</h3>
                   <h6>{price}</h6>
                   <button className='btn-2' onClick={showRating}>Rate this Book</button>

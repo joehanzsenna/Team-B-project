@@ -13,7 +13,7 @@ const MybooksSection1 = () => {
   const [like, setLike] = useState(false)
   
   const url = ' https://bookapi-3arg.onrender.com/all'
-
+ 
   const {data, isLoading, error} = Fetcher(url)
 
 
@@ -46,7 +46,7 @@ const MybooksSection1 = () => {
                   <h6><AiFillStar className='cards-innerStarIcon'/> {ratings}</h6>
                 </div>
                 <h6>{authur}</h6>
-                <div className='cards-innerPrice'>
+                <div className='cards-innerPrice'> 
                   <BsSuitHeartFill className='cards-innerLikeIcon'/>
                   <h6>{price}</h6>
                 </div>
