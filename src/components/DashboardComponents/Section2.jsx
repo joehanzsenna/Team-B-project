@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/dashboard/section2.css";
-import {AiFillStar, AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
+import { AiFillStar, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 const Section2 = () => {
   const [data, setData] = useState([]);
-
-  const book = <>
-  
-  </>
 
   useEffect(() => {
     axios
@@ -38,21 +34,21 @@ const Section2 = () => {
             return (
               <div className="">
                 <div className="eachbook ">
-               <div className="image-container">
-               <img src={each.image} alt="" className="" />
-               </div>
-               <div className="text-center d-flex justify-content-between">
-               <p>{each.title}</p>
-                <div className="rating-container">
-                  <AiFillStar/>
-                <p>{each.ratings}</p>
+                  <div className="image-container">
+                    <img src={each.image} alt="" className="" />
+                  </div>
+                  <div className="text-center d-flex justify-content-between">
+                    <p>{each.title}</p>
+                    <div className="rating-container">
+                      <AiFillStar />
+                      <p>{each.ratings}</p>
+                    </div>
+                  </div>
+                  <div className="price-like-container d-flex justify-content-between">
+                    <AiOutlineHeart />
+                    <p>{each.price}</p>
+                  </div>
                 </div>
-               </div>
-               <div className="price-like-container d-flex justify-content-between">
-                <AiOutlineHeart/>
-                <p>{each.price}</p>
-               </div>
-              </div>
               </div>
             );
           }
@@ -64,21 +60,21 @@ const Section2 = () => {
             return (
               <div className="">
                 <div className="eachbook ">
-               <div className="image-container">
-               <img src={each.image} alt="" className="" />
-               </div>
-               <div className="text-center d-flex justify-content-between">
-               <p>{each.title}</p>
-                <div className="rating-container">
-                  <AiFillStar/>
-                <p>{each.ratings}</p>
+                  <div className="image-container">
+                    <img src={each.image} alt="" className="" />
+                  </div>
+                  <div className="text-center d-flex justify-content-between">
+                    <p>{each.title}</p>
+                    <div className="rating-container">
+                      <AiFillStar />
+                      <p>{each.ratings}</p>
+                    </div>
+                  </div>
+                  <div className="price-like-container d-flex justify-content-between">
+                    <AiOutlineHeart />
+                    <p>{each.price}</p>
+                  </div>
                 </div>
-               </div>
-               <div className="price-like-container d-flex justify-content-between">
-                <AiOutlineHeart/>
-                <p>{each.price}</p>
-               </div>
-              </div>
               </div>
             );
           }
