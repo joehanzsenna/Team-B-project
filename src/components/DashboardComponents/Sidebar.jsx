@@ -10,7 +10,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar-container ">
       <div className="logo-container">
+        <Link to={`/`}>
         <img src={booklogo} alt="" className="sidebar-logo" />
+        </Link>
       </div>
       <div className="features-icons d-flex">
         <Link to='/dashboard'>

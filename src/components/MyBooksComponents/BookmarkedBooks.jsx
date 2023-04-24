@@ -32,7 +32,7 @@ const BookmarkedBooks = () => {
                   }} /> : <BsSuitHeart name={id} onClick={(e) =>
                     e.currentTarget.name === id ? setLike(true) : setLike(false)
                   } />}
-                  <h4>{Like}</h4>
+                  <h3>{Like}</h3>
                   <h6>{price}</h6>
                 </div>
               </div>

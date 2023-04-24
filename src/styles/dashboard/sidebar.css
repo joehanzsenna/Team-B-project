@@ -18,6 +18,9 @@
 /* .features-icons img{
     
 } */
+.sidebar-logo{
+    width: 3rem;
+}
 .sidebarIcons{
     cursor: pointer;
     width: 2rem;
@@ -27,7 +30,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.logo-container img{
-width: 30%;
 }
