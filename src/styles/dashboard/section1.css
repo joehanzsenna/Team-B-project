@@ -10,7 +10,7 @@
   border-radius: 10px;
   color: rgba(63, 178, 229, 1);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
 }
 .discover-header {
@@ -28,23 +28,12 @@
   background-image: url(../../assets/Frame\ 238\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50%;
   border-radius: 10px;
   text-align: center;
   display: flex;
   align-items: center;
 }
 
-.opacity {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(32, 29, 29, 0.452);
-  border-radius: 10px;
-  z-index: 1;
-}
 .join {
   margin-top: 30px;
   color: white;
@@ -52,16 +41,28 @@
 }
 
 .inner-content {
-  z-index: 20;
   color: azure;
   padding: 70px 15px;
 }
-.section1-container {
-  max-height: 300px;
-}
 
-@media (max-width: 1040px) {
-  .index-container {
-    display: none;
+
+@media (max-width: 768px) {
+    .discover-content{
+        padding: 20px 8px;
+    }
+    .vibrant-community{
+        display: none;
+    }
+    .discover-header{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .lorem-discover{
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    .see-now{
+        padding: 2px 15px;
+        font-size: 10px;
+    }
   }
-}

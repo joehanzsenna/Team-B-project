@@ -8,21 +8,22 @@ import people from "../../assets/people.png";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar-container d-none d-lg-block">
-      <div className="logo-container">
-        <img src={booklogo} alt="" className="sidebar-logo" />
+    <div className="sidebar-container ">
+      <div onClick={() => console.log('i was clicked')} className="logo-container" >
+
+          <img src={booklogo} alt="" className="sidebar-logo" />
       </div>
-      <div className="features-icons d-flex">
+      {/* <div className="features-icons d-flex">
         <Link to='/dashboard'>
-          <img src={windows} alt="" className="sidebarIcons"/>
+        <img src={windows} alt="" />
         </Link>
 
-        <Link to='/mybookspage'>
-          <img src={bookmark} alt="" className="sidebarIcons"/>
+        <Link to='/purchasedbookspage' >
+          <img src={bookmark} alt="" />
         </Link>
-
-        <img src={people} alt="" className="sidebarIcons" />
-      </div>
+       
+        <img src={people} alt="" />
+      </div> */}
     </div>
   );
 };

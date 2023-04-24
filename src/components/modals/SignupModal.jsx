@@ -5,6 +5,7 @@ import "../../styles/auth/auth.css";
 
 const SignupModal = () => {
   const [loginbtn, setLoginBtn] = useState(false);
+  
   return (
     <>
       <div
