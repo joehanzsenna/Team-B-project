@@ -1,0 +1,68 @@
+.discover-content {
+  background-color: rgba(63, 178, 229, 1);
+  color: white;
+  border-radius: 8px;
+  padding: 22px;
+}
+.see-now,
+.join {
+  padding: 6px 30px;
+  border-radius: 10px;
+  color: rgba(63, 178, 229, 1);
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+}
+.discover-header {
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.lorem-discover {
+  font-weight: 300;
+  padding-top: 0px;
+}
+
+.vibrant-community {
+  background-image: url(../../assets/Frame\ 238\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.join {
+  margin-top: 30px;
+  color: white;
+  background-color: rgba(63, 178, 229, 1);
+}
+
+.inner-content {
+  color: azure;
+  padding: 70px 15px;
+}
+
+
+@media (max-width: 768px) {
+    .discover-content{
+        padding: 20px 8px;
+    }
+    .vibrant-community{
+        display: none;
+    }
+    .discover-header{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .lorem-discover{
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    .see-now{
+        padding: 2px 15px;
+        font-size: 10px;
+    }
+  }
