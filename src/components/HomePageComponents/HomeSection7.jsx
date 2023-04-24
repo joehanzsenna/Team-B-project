@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineRight } from 'react-icons/ai';
 import { AiOutlineLeft } from 'react-icons/ai';
-import {Swiper, SwiperSlide, } from 'swiper/react'
+import {Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css';
 import'swiper/css/effect-coverflow';

@@ -20,8 +20,12 @@
     align-items: center;
 
 }
+.menuIcon{
+    display: none;
+    font-size: 1.8rem;
+}
 
-ul {
+.menu {
     display: flex;
     list-style-type: none;
     cursor: pointer;
@@ -29,7 +33,7 @@ ul {
     text-align: center;
     align-content: center;
 }
-ul li ,.link{
+.menu li ,.link{
     margin: 1rem 0;
     text-decoration: none;
     color: #000;
@@ -57,3 +61,40 @@ ul li ,.link:hover{
 } */
 
 /* button style  */
+
+@media(max-width : 1000px){
+    .menu{
+        position: absolute;
+        width: 100%;
+        background-color: rgba(10, 121, 206, 0.86);
+        left: -100%;
+        top: 2.6rem;
+        flex-direction: column;
+        padding: 7rem 0;
+        transition: all .5s ease-in-out;
+    }
+    .menu li,.link{
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        color: white;
+    }
+    .menu li:hover, 
+    .link:hover{
+        background-color: #3FB2E5;
+        color: #000;
+        width: 100%;
+    }
+    .menuActive {
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+
+    }
+}
