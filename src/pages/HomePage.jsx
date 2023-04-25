@@ -6,10 +6,12 @@ import HomeSection4 from '../components/HomePageComponents/HomeSection4'
 import HomeSection5 from '../components/HomePageComponents/HSection5Folder/HomeSection5'
 import HomeSection6 from '../components/HomePageComponents/HomeSection6'
 import HomeSection7 from '../components/HomePageComponents/HomeSection7'
+import NavBar from '../components/NavBar'
 
 const HomePage = () => {
   return (
     <div>
+      <NavBar/>
       <HomeSection1/>
       <HomeSection2/>
       <HomeSection3/>

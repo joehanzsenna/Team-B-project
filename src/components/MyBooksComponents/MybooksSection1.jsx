@@ -1,52 +1,57 @@
 import React, { useState, useEffect } from 'react'
 // import { MybooksImages } from './MybooksDB'
 import { AiFillStar } from 'react-icons/ai'
-import { BsSuitHeartFill } from 'react-icons/bs'
-import { BsSuitHeart } from 'react-icons/bs'
+import { BsFillBookmarkFill, BsBookmark } from 'react-icons/bs'
 import axios from 'axios'
 import MybooksRoute from './MybooksRoute'
 
 const MybooksSection1 = () => {
-  // const [pics] = useState(MybooksImages)
-  const [like, setLike] = useState(false)
-  const [data, setData] = useState([]);
+  const [books, setBooks] = useState([]);
+  const [bookmarked, setBookmarked] = useState(null)
+
+  const getBookLists = async () => {
+    const res = await axios.get("https://bookapi-3arg.onrender.com/all")
+    setBooks(res.data.books)
+  }
+  console.log(books);
 
   useEffect(() => {
-    axios
-      .get("https://bookapi-3arg.onrender.com/all")
-      .then((res) => {
-        console.log(res);
-        console.log(res.data.books);
-        let datacompile = res.data.books;
-        setData(datacompile);
-        console.log(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    getBookLists()
   }, []);
+
+  function changedBookmarkState(book) {
+    let newData
+    if (book.bookmarked) {
+      newData = books.map((singleBook) => {
+        if (singleBook._id === book._id) {
+          return { ...book, bookmarked: false }
+        } else {
+          return singleBook
+        }
+      })
+    } else {
+      newData = books.map((singleBook) => {
+        if (singleBook._id === book._id) {
+          return { ...book, bookmarked: true }
+        } else {
+          return singleBook
+        }
+      })
+    }
+    console.log(newData);
+    setBooks(newData)
+  }
+
+
+
   return (
     <div className='MybooksSection1'>
       {/* <MybooksRoute/> */}
       <div className='MybooksSection1-cards'>
-        {/* <div className='MybooksSection1-card'>
-            <img src={cardImg1} alt="" className='MybooksSection1-cards-img'/>
-            <div className='cards-innerTitle'>
-              <h6>All This Time</h6>
-              <h6><AiFillStar className='cards-innerStarIcon'/> 4.5</h6>
-            </div>
-            <h6>Reece James</h6>
-            <div className='cards-innerPrice'>
-              <BsFillSuitHeartFill className='cards-innerLikeIcon'/>
-              <h6>N6.500</h6>
-            </div>
-          </div> */}
-
-
-        {data.map((book) => {
-          const { id, image, title, ratings, author, price } = book
+        {books.map((book) => {
+          const { _id, image, title, ratings, author, price, liked } = book
           return (
-            <div className='MybooksSection1-card' key={id}>
+            <div className='MybooksSection1-card' key={_id}>
               <img src={image} alt="" className='MybooksSection1-cards-img' />
               <div className='cards-innerTitle'>
                 <h6>{title}</h6>
@@ -54,13 +59,11 @@ const MybooksSection1 = () => {
               </div>
               <h6>{author}</h6>
               <div className='cards-innerPrice'>
-                {like ? <BsSuitHeartFill name={id} onClick={(e) => {
-                  if (e.currentTarget.name === id) {
-                    setLike(true)
-                  }
-                }} /> : <BsSuitHeart name={id} onClick={(e) =>
-                  e.currentTarget.name === id ? setLike(true) : setLike(false)
-                } />}
+                {book?.bookmarked ? <BsFillBookmarkFill name={_id} onClick={() => {
+                  changedBookmarkState(book)
+                }} /> : <BsBookmark name={_id} onClick={() => {
+                  changedBookmarkState(book)
+                }} />}
                 <h6>{price}</h6>
               </div>
             </div>

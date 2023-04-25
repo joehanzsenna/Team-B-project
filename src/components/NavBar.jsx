@@ -17,9 +17,11 @@ const NavBar = () => {
       <SignupModal />
       <div className="Nav-items">
         <div>
-          <img src={logo} alt="" />
+          <Link to='/'>
+            <img src={logo} alt=""  className="main-logo"/>
+          </Link>
         </div>
-        <ul>
+        <ul className="menu">
           <li>
             <Link to="/" className="link">
               Home
@@ -31,13 +33,8 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/features" className="link">
-              Features
-            </Link>
-          </li>
-          <li>
             {/* <Link to="/signup" id="started" className="link"> */}
-            <button onClick={showModal}>Get Started</button>
+            <button onClick={showModal} id="started">Get Started</button>
             {/* </Link> */}
           </li>
         </ul>
