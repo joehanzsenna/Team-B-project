@@ -1,24 +1,30 @@
-import React, { useState } from 'react'
-import { MybooksImages } from './MybooksDB'
-import cardImg1 from '../../assets/MybooksImages/MybooksImage01.png'
+import React, { useState, useEffect } from 'react'
+// import { MybooksImages } from './MybooksDB'
 import { AiFillStar } from 'react-icons/ai'
 import { BsSuitHeartFill } from 'react-icons/bs'
 import { BsSuitHeart } from 'react-icons/bs'
+import axios from 'axios'
 import MybooksRoute from './MybooksRoute'
 
 const MybooksSection1 = () => {
-  const [pics] = useState(MybooksImages)
+  // const [pics] = useState(MybooksImages)
   const [like, setLike] = useState(false)
+  const [data, setData] = useState([]);
 
-  // const toggleLike = () => {
-  //   if (like == true){
-  //     setLike(<BsSuitHeartFill/>)
-  //     console.log('liked')
-  //   }else{
-  //     setLike(<BsSuitHeart/>)
-  //     console.log('unliked')
-  //   }
-  // }
+  useEffect(() => {
+    axios
+      .get("https://bookapi-3arg.onrender.com/all")
+      .then((res) => {
+        console.log(res);
+        console.log(res.data.books);
+        let datacompile = res.data.books;
+        setData(datacompile);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div className='MybooksSection1'>
       {/* <MybooksRoute/> */}
@@ -37,16 +43,16 @@ const MybooksSection1 = () => {
           </div> */}
 
 
-        {pics.map((MybooksImages) => {
-          const { id, Imgs, title, rating, name, price, Like } = MybooksImages
+        {data.map((book) => {
+          const { id, Image, title, ratings, author, price } = book
           return (
             <div className='MybooksSection1-card' key={id}>
-              <img src={Imgs} alt="" className='MybooksSection1-cards-img' />
+              <img src={Image} alt="" className='MybooksSection1-cards-img' />
               <div className='cards-innerTitle'>
                 <h6>{title}</h6>
-                <h6><AiFillStar className='cards-innerStarIcon' /> {rating}</h6>
+                <h6><AiFillStar className='cards-innerStarIcon' /> {ratings}</h6>
               </div>
-              <h6>{name}</h6>
+              <h6>{author}</h6>
               <div className='cards-innerPrice'>
                 {like ? <BsSuitHeartFill name={id} onClick={(e) => {
                   if (e.currentTarget.name === id) {
@@ -55,7 +61,6 @@ const MybooksSection1 = () => {
                 }} /> : <BsSuitHeart name={id} onClick={(e) =>
                   e.currentTarget.name === id ? setLike(true) : setLike(false)
                 } />}
-                <h4>{Like}</h4>
                 <h6>{price}</h6>
               </div>
             </div>

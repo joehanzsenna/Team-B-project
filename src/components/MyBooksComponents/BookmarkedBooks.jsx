@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { BookmarkedArray } from './MybooksDB'
 import { AiFillStar } from 'react-icons/ai'
 import { BsSuitHeartFill } from 'react-icons/bs'
@@ -8,22 +9,38 @@ import MybooksRoute from './MybooksRoute'
 const BookmarkedBooks = () => {
   const [bookmarkedContents] = useState(BookmarkedArray)
   const [like, setLike] = useState(false)
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://bookapi-3arg.onrender.com/all")
+      .then((res) => {
+        console.log(res);
+        console.log(res.data.books);
+        let datacompile = res.data.books;
+        setData(datacompile);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div>
         <MybooksRoute/>
       <div className='MybooksSection1-cards'>
 
-          {bookmarkedContents.map((BookmarkedArray) => {
-            const { id, Imgs, title, rating, name, price, Like } = BookmarkedArray
+          {data.map((items) => {
+            const { id, Image, title, ratings, author, price, Like } = items
             return (
               <div className='MybooksSection1-card' key={id}>
-                <img src={Imgs} alt="" className='MybooksSection1-cards-img' />
+                <img src={Image} alt="" className='MybooksSection1-cards-img' />
                 <div className='cards-innerTitle'>
                   <h6>{title}</h6>
-                  <h6><AiFillStar className='cards-innerStarIcon' /> {rating}</h6>
+                  <h6><AiFillStar className='cards-innerStarIcon' /> {ratings}</h6>
                 </div>
-                <h6>{name}</h6>
+                <h6>{author}</h6>
                 <div className='cards-innerPrice'>
                   {like ? <BsSuitHeartFill name={id} onClick={(e) => {
                     if (e.currentTarget.name === id) {
