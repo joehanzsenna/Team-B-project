@@ -9,17 +9,17 @@ const BookCard = ({each}) => {
       <div className="image-container">
         <img src={each.image} alt="" className="" />
       </div>
-      <div className="text-center d-flex justify-content-between">
-        <p className='booktitle'>{(each.title).slice(0,15)}</p>
+      <div className=" d-flex justify-content-between">
+        <p className='booktitle'>{(each.title).slice(0,15)}...</p>
         <div className="rating-container d-flex">
           <AiFillStar className='mt-1' />
-          <p className='text-dark ps-2'>{each.ratings}</p>
+          <p className='text-dark ps-2 m-0'>{each.ratings}</p>
         </div>
       </div>
-        <p className='p-0 '>{each.author}</p>
+        <p className='bookauthor'>{each.author}</p>
       <div className="price-like-container d-flex justify-content-between">
-        <AiOutlineHeart />
-        <p>{each.price}</p>
+        <AiOutlineHeart className='likeicon' />
+        <p className='bookprice'>N{each.price}</p>
       </div>
     </div>
   </div>

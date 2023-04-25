@@ -28,7 +28,7 @@ const Section2 = () => {
         <button className="viewall-button">View all</button>
       </div>
 
-      <div className="popular-container d-flex justify-content-start gap-2 align-items-center container-xxl">
+      <div className="popular-container d-flex justify-content-start gap-5 align-items-center container-xxl">
         {data.map((each) => {
           if (each.ratings >= 3) {
             return (
@@ -37,7 +37,7 @@ const Section2 = () => {
           }
         })}
       </div>
-      <div className="popular-container d-flex justify-content-start gap-2 align-items-center container-xxl">
+      <div className="popular-container d-flex justify-content-start gap-5 align-items-center container-xxl">
         {data.map((each) => {
           if (each.bestselling === true) {
             console.log(each.title);
