@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/book1.png";
+import logo from "../assets/logos_growth-book-icon.png";
 import SignupModal from "./modals/SignupModal";
 import * as bootstrap from "bootstrap/dist/js/bootstrap";
 

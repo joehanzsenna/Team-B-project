@@ -44,10 +44,10 @@ const MybooksSection1 = () => {
 
 
         {data.map((book) => {
-          const { id, Image, title, ratings, author, price } = book
+          const { id, image, title, ratings, author, price } = book
           return (
             <div className='MybooksSection1-card' key={id}>
-              <img src={Image} alt="" className='MybooksSection1-cards-img' />
+              <img src={image} alt="" className='MybooksSection1-cards-img' />
               <div className='cards-innerTitle'>
                 <h6>{title}</h6>
                 <h6><AiFillStar className='cards-innerStarIcon' /> {ratings}</h6>

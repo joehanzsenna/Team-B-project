@@ -30,9 +30,9 @@ const Topbar = ({
   return (
     <div className=" topbar-container general">
       <SidebarModal/>
-      <>
+      {/* <>
         height: {height} width: {width}
-      </>
+      </> */}
 
       <div className="container second-container">
         <div className="d-flex justify-content-between align-items-center ">
