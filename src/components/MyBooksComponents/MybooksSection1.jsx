@@ -59,9 +59,9 @@ const MybooksSection1 = () => {
               </div>
               <h6>{author}</h6>
               <div className='cards-innerPrice'>
-                {book?.bookmarked ? <BsFillBookmarkFill name={_id} onClick={() => {
+                {book?.bookmarked ? <BsFillBookmarkFill style={{color:'#3FB2E5'}} name={_id} onClick={() => {
                   changedBookmarkState(book)
-                }} /> : <BsBookmark name={_id} onClick={() => {
+                }} /> : <BsBookmark name={_id} style={{color:'#3FB2E5'}} onClick={() => {
                   changedBookmarkState(book)
                 }} />}
                 <h6>{price}</h6>

@@ -1,17 +1,13 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios'
-import { PurchasedArray } from './MybooksDB'
 import { AiFillStar } from 'react-icons/ai'
-import { BsBootstrap, BsSuitHeartFill } from 'react-icons/bs'
-import { BsSuitHeart } from 'react-icons/bs'
 import MybooksRoute from './MybooksRoute'
 import RatingModal from './RatingModal'
+import { BsFillBookmarkFill, BsBookmark } from 'react-icons/bs'
 import * as bootstrap from "bootstrap/dist/js/bootstrap";
 
 const PurchasedBooks = () => {
-  const [purchasedContents] = useState(PurchasedArray)
-  const [like, setLike] = useState(false)
-  const [data, setData] = useState([]);
+  const [books, setBooks] = useState([])
 
   const showRating = () => {
 
@@ -20,31 +16,46 @@ const PurchasedBooks = () => {
         )
         ratingModal.show()
     }
+    const getBookList = async () => {
+      const res = await axios.get('https://bookapi-3arg.onrender.com/purchased')
+      setBooks(res.data.books)
+    }
 
     useEffect(() => {
-      axios
-        .get("https://bookapi-3arg.onrender.com/purchased")
-        .then((res) => {
-          console.log(res);
-          console.log(res.data.books);
-          let datacompile = res.data.books;
-          setData(datacompile);
-          console.log(data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      getBookList()
     }, []);
+
+    function changedBookmarkState (book) {
+      let newData 
+      if( book.bookmarked ) {
+        newData = books.map((singleBook) => {
+          if (singleBook._id === book._id) {
+            return { ...book, bookmarked: false }
+          } else {
+            return singleBook
+          }
+        })
+      }else {
+        newData = books.map((singleBook) => {
+          if (singleBook._id === book._id) {
+            return { ...book, bookmarked: true }
+          } else {
+            return singleBook
+          }
+        })
+    }
+    setBooks(newData)
+  }
 
   return (
     <div>
       <MybooksRoute/>
       <RatingModal/>
       <div className='MybooksSection1-cards'>
-          {data.map((items) => {
-            const { id, image, title, ratings, author, price, Like } = items
+          {books.map((book) => {
+            const { _id, image, title, ratings, author, Like } = book
             return (
-              <div className='MybooksSection1-card' key={id}>
+              <div className='MybooksSection1-card' key={_id}>
                 <img src={image} alt="" className='MybooksSection1-cards-img' />
                 <div className='cards-innerTitle'>
                   <h6>{title}</h6>
@@ -52,15 +63,12 @@ const PurchasedBooks = () => {
                 </div>
                 <h6>{author}</h6>
                 <div className='cards-innerPrice'>
-                  {like ? <BsSuitHeartFill name={id} onClick={(e) => {
-                    if (e.currentTarget.name === id) {
-                      setLike(true)
-                    }
-                  }} /> : <BsSuitHeart name={id} onClick={(e) =>
-                    e.currentTarget.name === id ? setLike(true) : setLike(false)
-                  } />}
+                  {book?.bookmarked ? <BsFillBookmarkFill style={{color:'#3FB2E5'}}
+                   name={_id} onClick={ () => 
+                  {changedBookmarkState(book)}} />
+                  : <BsBookmark style={{color:'#3FB2E5'}} name={_id} onClick={() => 
+                  {changedBookmarkState(book)}} />}
                   <h4>{Like}</h4>
-                  <h6>{price}</h6>
                   <button className='btn-2' onClick={showRating}>Rate this Book</button>
                 </div>
               </div>

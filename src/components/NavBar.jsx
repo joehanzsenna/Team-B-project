@@ -16,11 +16,12 @@ const NavBar = () => {
     <div className="Nav">
       <SignupModal />
       <div className="Nav-items">
-        <div>
-          <Link to='/'>
-            <img src={logo} alt=""  className="main-logo"/>
-          </Link>
-        </div>
+        <Link to='/' className="link">
+          <div className="nav-logo">
+              <img src={logo} alt=""  className="main-logo"/>
+              <h4 className="nav-logoText">The B<span style={{color:'#3FB2E5'}}>oo</span>kers</h4>
+          </div>
+        </Link>
         <ul className="menu">
           <li>
             <Link to="/" className="link">

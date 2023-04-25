@@ -4,6 +4,7 @@ import { HiArrowRight } from 'react-icons/hi';
 import { HiArrowLeft } from 'react-icons/hi';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from 'react-router-dom'
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -94,7 +95,9 @@ const HomeSection5 = () => {
                 <SwiperSlide key={id} className='Sliding-swipe'>
                   <h2>{title}</h2>
                   <h3>{price}</h3>
-                  <button className='btn3'>Buy Book</button>
+                    <Link to='*'>
+                        <button className='btn3'>Buy Book</button>
+                    </Link>
                 </SwiperSlide>
             )
           })}

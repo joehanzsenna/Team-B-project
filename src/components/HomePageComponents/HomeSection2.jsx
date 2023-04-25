@@ -12,6 +12,7 @@ import cardImg1 from '../../assets/HomePageImages/card-img1.jpg'
 import cardImg2 from '../../assets/HomePageImages/card-img2.jpg'
 import cardImg3 from '../../assets/HomePageImages/card-img3.jpg'
 import { AiTwotoneStar } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const HomeSection2 = () => {
 
@@ -71,7 +72,9 @@ const HomeSection2 = () => {
                     </div>
                     <p className='best-card-innerText'>A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story and interested in exploring themes such as cultural indifference</p>
                     <div className='best-card-inner_btn'>
-                        <button className='best-card-inner_btns'>Buy Book</button>
+                        <Link to='*'>
+                            <button className='best-card-inner_btns'>Buy Book</button>
+                        </Link>
                         <h6>N7,500 <del className='best-card-innerDel'>N8,600</del></h6>
                     </div>
                 </div>
@@ -91,7 +94,9 @@ const HomeSection2 = () => {
                     </div>
                     <p className='best-card-innerText'>A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story and interested in exploring themes such as cultural indifference</p>
                     <div className='best-card-inner_btn'>
-                        <button className='best-card-inner_btns'>Buy Book</button>
+                        <Link to='*'>
+                            <button className='best-card-inner_btns'>Buy Book</button>
+                        </Link>
                         <h6>N12,500 <del className='best-card-innerDel'>N8,600</del></h6>
                     </div>
                 </div>
@@ -111,7 +116,10 @@ const HomeSection2 = () => {
                     </div>
                     <p className='best-card-innerText'>A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story and interested in exploring themes such as cultural indifference</p>
                     <div className='best-card-inner_btn'>
-                        <button className='best-card-inner_btns'>Buy Book</button>
+
+                        <Link to='*'>
+                            <button className='best-card-inner_btns'>Buy Book</button>
+                        </Link>
                         <h6>N9,000 <del className='best-card-innerDel'>N8,600</del></h6>
                     </div>
                 </div>
@@ -131,7 +139,9 @@ const HomeSection2 = () => {
                     </div>
                     <p className='best-card-innerText'>A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story and interested in exploring themes such as cultural indifference</p>
                     <div className='best-card-inner_btn'>
-                        <button className='best-card-inner_btns'>Buy Book</button>
+                        <Link to='*'>
+                            <button className='best-card-inner_btns'>Buy Book</button>
+                        </Link>
                         <h6>N9,000 <del className='best-card-innerDel'>N8,600</del></h6>
                     </div>
                 </div>

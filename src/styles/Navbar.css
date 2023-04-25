@@ -54,7 +54,16 @@ ul li ,.link:hover{
     color: rgb(50, 50, 226);
 }
 .main-logo{
-    width: 3rem;
+    width: 2.5rem;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logoText{
+    font-weight: 800;
+    padding-top: 1rem;
+    font-size: 1.2rem;
 }
 /* .link{
     text-decoration: none;

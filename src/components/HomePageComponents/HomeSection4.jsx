@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { AiOutlineRight } from 'react-icons/ai';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +13,7 @@ import Hsec4Img1 from '../../assets/HomePageImages/Hsec4-img1.jpg'
 import Hsec4Img2 from '../../assets/HomePageImages/Hsec4-img2.jpg'
 import Hsec4Img3 from '../../assets/HomePageImages/Hsec4-img3.jpg'
 import Hsec4Img4 from '../../assets/HomePageImages/Hsec4-img4.png'
+
 
 const HomeSection4 = () => {
   return (
@@ -66,7 +68,9 @@ const HomeSection4 = () => {
                         </div>
                         <p className='text2'>A must read book for anyone who is exploring philosophical ideas through ...See more</p>
                         <div className='Specialcard-price'>
-                            <button className='btn3'>Buy Book</button>
+                            <Link to='*'>
+                                <button className='btn3'>Buy Book</button>
+                            </Link>
                             <h6>N7,500<del className='Specialcard-innerDel'>N8,600</del></h6>
                         </div>
                     </div>
@@ -83,7 +87,9 @@ const HomeSection4 = () => {
                         </div>
                         <p className='text2'>A must read book for anyone who is exploring philosophical ideas through ...See more</p>
                         <div className='Specialcard-price'>
-                            <button className='btn3'>Buy Book</button>
+                            <Link to='*'>
+                                <button className='btn3'>Buy Book</button>
+                            </Link>
                             <h6>N7,500<del className='Specialcard-innerDel'>N8,600</del></h6>
                         </div>
                     </div>
@@ -100,7 +106,9 @@ const HomeSection4 = () => {
                         </div>
                         <p className='text2'>A must read book for anyone who is exploring philosophical ideas through ...See more</p>
                         <div className='Specialcard-price'>
-                            <button className='btn3'>Buy Book</button>
+                            <Link to='*'>
+                                <button className='btn3'>Buy Book</button>
+                            </Link>
                             <h6>N7,500<del className='Specialcard-innerDel'>N8,600</del></h6>
                         </div>
                     </div>
@@ -117,7 +125,9 @@ const HomeSection4 = () => {
                         </div>
                         <p className='text2'>A must read book for anyone who is exploring philosophical ideas through ...See more</p>
                         <div className='Specialcard-price'>
-                            <button className='btn3'>Buy Book</button>
+                            <Link to='*'>
+                                <button className='btn3'>Buy Book</button>
+                            </Link>
                             <h6>N7,500<del className='Specialcard-innerDel'>N8,600</del></h6>
                         </div>
                     </div>
@@ -134,7 +144,9 @@ const HomeSection4 = () => {
                         </div>
                         <p className='text2'>A must read book for anyone who is exploring philosophical ideas through ...See more</p>
                         <div className='Specialcard-price'>
-                            <button className='btn3'>Buy Book</button>
+                            <Link to='*'>
+                                <button className='btn3'>Buy Book</button>
+                            </Link>
                             <h6>N7,500<del className='Specialcard-innerDel'>N8,600</del></h6>
                         </div>
                     </div>
