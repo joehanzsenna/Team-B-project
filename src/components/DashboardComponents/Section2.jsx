@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/dashboard/section2.css";
 import { AiFillStar, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import BookCard from "./BookCard";
 
 const Section2 = () => {
   const [data, setData] = useState([]);
@@ -22,60 +23,26 @@ const Section2 = () => {
   }, []);
   return (
     <div className="allbooks-container container-xl">
-      <div className="d-flex gap-3 ps-3">
-        <p></p>
-        <h5>Popular Books</h5>
-        <button>View all</button>
+      <div className="d-flex align-items-center  gap-3 mt-3">
+        <h5 className="pt-1 fs-4 fw-1">Popular Books</h5>
+        <button className="viewall-button">View all</button>
       </div>
 
-      <div className="popular-container d-flex justify-content-center gap-3 align-items-center">
+      <div className="popular-container d-flex justify-content-start gap-2 align-items-center container-xxl">
         {data.map((each) => {
           if (each.ratings >= 3) {
             return (
-              <div className="">
-                <div className="eachbook ">
-                  <div className="image-container">
-                    <img src={each.image} alt="" className="" />
-                  </div>
-                  <div className="text-center d-flex justify-content-between">
-                    <p>{each.title}</p>
-                    <div className="rating-container">
-                      <AiFillStar />
-                      <p>{each.ratings}</p>
-                    </div>
-                  </div>
-                  <div className="price-like-container d-flex justify-content-between">
-                    <AiOutlineHeart />
-                    <p>{each.price}</p>
-                  </div>
-                </div>
-              </div>
+              <BookCard each={each}/>
             );
           }
         })}
       </div>
-      <div className="popular-container d-flex justify-content-center gap-3 align-items-center">
+      <div className="popular-container d-flex justify-content-start gap-2 align-items-center container-xxl">
         {data.map((each) => {
           if (each.bestselling === true) {
+            console.log(each.title);
             return (
-              <div className="">
-                <div className="eachbook ">
-                  <div className="image-container">
-                    <img src={each.image} alt="" className="" />
-                  </div>
-                  <div className="text-center d-flex justify-content-between">
-                    <p>{each.title}</p>
-                    <div className="rating-container">
-                      <AiFillStar />
-                      <p>{each.ratings}</p>
-                    </div>
-                  </div>
-                  <div className="price-like-container d-flex justify-content-between">
-                    <AiOutlineHeart />
-                    <p>{each.price}</p>
-                  </div>
-                </div>
-              </div>
+              <BookCard each={each}/>
             );
           }
         })}

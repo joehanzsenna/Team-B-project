@@ -32,6 +32,9 @@
   text-align: center;
   display: flex;
   align-items: center;
+  /* height: 220px; */
+  padding: 0.2% 10px;
+  min-height: 100px;
 }
 
 .join {
@@ -42,7 +45,7 @@
 
 .inner-content {
   color: azure;
-  padding: 70px 15px;
+  padding: 30px 5px;
 }
 
 

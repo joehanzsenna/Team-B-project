@@ -33,10 +33,9 @@ const DashboardLayout = ({ children }) => {
   }, [width]);
 
   return (
-<<<<<<< HEAD
-    <div className="overall">
+    <div className="overall ">
       <div className="d-lg-flex">
-        <Sidebar />
+        <Sidebar  />
         <div className="content-container ps-lg-4 ">
           <Topbar
             width={width}
@@ -47,14 +46,6 @@ const DashboardLayout = ({ children }) => {
             setShowSearch={setShowSearch}
           />
           <div className="childrenContainer">{children}</div>
-=======
-    <div className="d-flex ">
-      <Sidebar />
-      <div className="content-container ps-5">
-        <Topbar />
-        <div className="childrenContainer">
-            {children}
->>>>>>> books
         </div>
       </div>
     </div>
