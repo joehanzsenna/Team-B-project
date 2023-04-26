@@ -1,61 +1,54 @@
-import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import image01 from '../../assets/HomePageImages/Hsec4-img1.jpg'
-import image02 from '../../assets/HomePageImages/Hsec4-img2.jpg'
-import image03 from '../../assets/HomePageImages/Hsec4-img3.jpg'
-
+import React from "react";
+import img10 from "../../assets/HomePageImages/sec10logo.png";
+import location from "../../assets/HomePageImages/location-icon.png";
+import phone from "../../assets/HomePageImages/phone.png";
+import inbox from "../../assets/HomePageImages/inbox.png";
+import map from "../../assets/HomePageImages/map.png";
 
 const HomeSection9 = () => {
-    const [index, setIndex] = useState(0);
+  return (
+    <div className="sec10body container">
+      <div
+        className="flexbox"
+        // style={{ width: "35%" }}
+      >
+        <img src={img10} alt="" />
+        <p style={{ paddingTop: "20px" }}>
+          A must read book for anyone who is exploring philosophical ideas
+          through a comelling and engaging story and interested in exploring
+          themes such as cultural indifference interested in exploring themes{" "}
+        </p>
+      </div>
+      <div className="flexbox">
+        <h5>
+          <b style={{ color: "black", width: "5px" }}>Get in Touch Us</b>
+        </h5>
+        <div className="getflex">
+          <p>
+            <img src={location} alt="" />{" "}
+            <span style={{ color: "white" }}>..</span>1 Ogunlesi Street,
+            Onipanu, Lagos
+          </p>
+        </div>
+        <div className="getflex">
+          <p>
+            <img src={phone} alt="" />{" "}
+            <span style={{ color: "white" }}>..</span>+234 814 6745 450
+          </p>
+        </div>
+        <div className="getflex">
+          <p>
+            <img src={inbox} alt="" />{" "}
+            <span style={{ color: "white" }}>..</span>support@bookers.com
+          </p>
+        </div>
+      </div>
+      <div className="flexbox">
+        {" "}
+        <img src={map} alt="" width="90%" height="70%" />{" "}
+      </div>
+    </div>
+  );
+};
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-
-
-  };
-    return (
-       <div className='HomeSection9 container'>
-             <Carousel>
-          <Carousel.Item className='center'>
-            <img
-              className="Hsec9Img"
-              src={image01}
-              alt="First slide"
-            />
-            {/* <Carousel.Caption> */}
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            {/* </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item className='center'>
-            <img
-              className="Hsec9Img"
-              src={image02}
-              alt="Second slide"
-            />
-    
-            {/* <Carousel.Caption> */}
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            {/* </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item className='center'>
-            <img
-              className="Hsec9Img"
-              src={image03}
-              alt="Third slide"
-            />
-    
-            {/* <Carousel.Caption> */}
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            {/* </Carousel.Caption> */}
-          </Carousel.Item>
-        </Carousel>
-       </div>
-      );
-}
-
-export default HomeSection9
+export default HomeSection9;

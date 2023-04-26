@@ -1,0 +1,141 @@
+.SecTSbody {
+  background-color: white;
+  max-width: 1400px;
+  /* border: 2px solid rgb(0, 255, 102); */
+  margin: 0 auto
+}
+@media (max-width: 991px) {
+  .SecTSbody {
+    width: 100%;
+    padding-top: 30px;
+  }
+}
+.SecTSbody h1 {
+    padding-top: 50px;
+  text-align: center;
+  font-size: 58px;
+  color: black;
+}
+
+@media (max-width: 991px) {
+  .SecTSbody h1 {
+    padding-top: 5px;
+    font-size: 200%;
+  }
+}
+
+.SecTSbody p {
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: center;
+  color: #747171;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .SecTSbody p {
+    padding-top: 5%;
+    width: 100%;
+      font-size: 15px;
+  }
+}
+
+/* .secTS-btn {
+  padding-top: 10px;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .secTS-btn {
+  }
+}
+
+.SecTSbody button {
+  border: 2px solid rgb(158, 20, 20);
+  border-style: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #33cc33;
+  color: white;
+} */
+/* .SecTSbody button:hover {
+  border: 2px solid rgb(158, 20, 20);
+  border-style: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #000099;
+}
+@media (max-width: 991px) {
+  .SecTSbody button {
+    padding: 5% 20%;
+  }
+}
+
+.SecTSbody img {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 23%;
+  padding-bottom: 75px;
+} */
+/* .Sec5body img{
+    width: 90%;
+    padding: 10% 10%;
+} */
+
+/* @media (max-width:700px) {
+    .sec5img{
+        /* flex-direction: column; */
+/* width: 80%; */
+/* } */
+
+/* } */
+/* @media (max-width: 1177px) {
+  .SecTSbody img {
+    width: 50%;
+    padding: 1% 10%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 700px) {
+  .SecTSbody img {
+    width: 60%;
+    padding: 1% 10%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 580px) {
+  .SecTSbody img {
+    width: 60%;
+    padding: 1% 10%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 586px) {
+  .SecTSbody img {
+    width: 60%;
+    padding: 1% 10%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 388px) {
+  .SecTSbody img {
+    width: 80%;
+    padding: 1% 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 414px) {
+  .SecTSbody img {
+    width: 80%;
+    padding: 1% 5%;
+    padding-bottom: 5%;
+  }
+} */

@@ -1,13 +1,7 @@
-// import { Carousel } from 'bootstrap'
-import React from 'react'
+import React from "react";
+import "../../styles/Aboutpagecss/AbtSec8.css";
 
-
-
-
-
-const HomeSection8 = () => {
-
-    
+const Aboutsec8 = () => {
   return (
     <div>
       <div className="sec8body  container">
@@ -73,6 +67,6 @@ const HomeSection8 = () => {
       </div>
     </div>
   );
-}
+};
 
-export default HomeSection8
+export default Aboutsec8;
