@@ -48,7 +48,7 @@ const Aboutsec9 = () => {
         </div>
         <div className="flexbox">
           {" "}
-          <img src={map} alt="" width="90%" height="70%" />{" "}
+          <img src={map} alt="" width="100%" height="70%" />{" "}
         </div>
       </div>
     </div>

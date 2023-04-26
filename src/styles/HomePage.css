@@ -588,8 +588,6 @@ utilities .header1 {
   display: flex;
   justify-content: space-between;
 }
-
-}
 .HomeSection7-contents{
     width: 90%;
     margin: 0 auto;
@@ -620,6 +618,7 @@ utilities .header1 {
 .HomeSection7-items-inner{
     display: flex;
     justify-content: space-between;
+}
 .slider-position {
   /* border: 1px solid red; */
   margin-right: 100%;

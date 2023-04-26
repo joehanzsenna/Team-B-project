@@ -505,10 +505,12 @@ import Aboutsec7 from "../components/AboutPage/Aboutsec7";
 import Aboutsec8 from "../components/AboutPage/Aboutsec8";
 import Aboutsec9 from "../components/AboutPage/Aboutsec9";
 import Aboutsec10 from "../components/AboutPage/Aboutsec10";
+import NavBar from "../components/NavBar";
 
 const AboutPage = () => {
   return (
     <div className="">
+      <NavBar/>
       <Aboutsec1 />
       <Aboutsec2 />
       <Aboutsec3 />
