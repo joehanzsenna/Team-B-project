@@ -97,7 +97,7 @@ const HomeSection7 = () => {
                 <div className='swiper-button-nextest swipe-arrow'>
                     <AiOutlineRight className='Hsec2Icon'/>
                 </div>
-                <div className='swiper-pagination'></div>
+                {/* <div className='swiper-pagination'></div> */}
             </div>
         </div>
     </div>
