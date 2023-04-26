@@ -54,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #3FB2E5;
 }
 .active:hover{
     color: #3FB2E5;
@@ -72,7 +73,7 @@
 }
 .MybooksSection1-card{
     width: 100%;
-    height: ;
+    /* height: ; */
     /* border: .1rem solid grey; */
 }
 .MybooksSection1-cards-img{
