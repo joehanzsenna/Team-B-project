@@ -1,4 +1,3 @@
-// export default AboutPage;
 import React from "react";
 import Aboutsec1 from "../components/AboutPage/Aboutsec1";
 import Aboutsec2 from "../components/AboutPage/Aboutsec2";

@@ -10,6 +10,7 @@ const SignupModal = () => {
     <>
       <div
         className="modal fade"
+        data-bs-backdrop="static"
         id="signup-modal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
