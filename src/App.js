@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import './styles/Navbar.css'
+import './styles/ComponentStyles.css'
 import './styles/MyBooks/MyBooks.css'
 import './styles/HomePage.css'
 import './styles/Error.css'
