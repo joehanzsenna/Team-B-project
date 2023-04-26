@@ -8,15 +8,63 @@
   align-items: center;
   justify-content: center;
   margin-top: 80%;
+  /* color:  red; */
 }
 .features-icons img {
   width: 2rem;
 }
-.logo-container{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sidebarIcons{
+  cursor: pointer;
+  color: grey;
+}
+.sidebarIcons.active1{
+  color: rgba(63, 178, 229, 1);
+}
+.logo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container img {
+  width: 30%;
+}
+.sidebar-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sidebarmodal */
+
+ .mobile-body {
+  background-color: rgba(241, 248, 255, 1);
+  /* width: 124px; */
+}
+.modal-features-icons {
+  flex-direction: column;
+  gap: 30px;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 80%;
+}
+.modal-features-icons img {
+  width: 30%;
+}
+.sidetext{
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.modal-logo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+ /* align-items: center; */
+}
+.modal-logo-container img {
+  width: 30%;
 }
 .logo-container img{
 width: 30%;
