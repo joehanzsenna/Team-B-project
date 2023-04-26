@@ -37,7 +37,7 @@ const Login = () => {
         data
       );
       console.log(res);
-      localStorage.setItem("currentUser").JSON.stringify(res.data);
+      // localStorage.setItem("currentUser").JSON.stringify(res.data);
       setLoad(false);
     } catch (err) {
       setLoad(false);

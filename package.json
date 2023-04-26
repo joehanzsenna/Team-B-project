@@ -16,13 +16,9 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "swiper": "^9.2.3",
-    "web-vitals": "^2.1.4"
-=======
     "web-vitals": "^2.1.4",
     "yup": "^1.1.1"
->>>>>>> dashboard
   },
   "scripts": {
     "start": "react-scripts start",
