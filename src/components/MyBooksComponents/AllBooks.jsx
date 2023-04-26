@@ -54,10 +54,10 @@ const MybooksSection1 = () => {
             <div className='MybooksSection1-card' key={_id}>
               <img src={image} alt="" className='MybooksSection1-cards-img' />
               <div className='cards-innerTitle'>
-                <h6>{title}</h6>
+                <h6 className='bookTitle'>{title}</h6>
                 <h6><AiFillStar className='cards-innerStarIcon' /> {ratings}</h6>
               </div>
-              <h6>{author}</h6>
+              <h6 className='bookAuthor'>{author}</h6>
               <div className='cards-innerPrice'>
                 {book?.bookmarked ? <BsFillBookmarkFill style={{color:'#3FB2E5'}} name={_id} onClick={() => {
                   changedBookmarkState(book)

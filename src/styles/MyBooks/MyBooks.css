@@ -21,10 +21,8 @@
 .MybooksSection1-tab{
     display: flex;
     column-gap: 3rem;
-    /* background-color: red; */
     margin: 2rem 0;
     align-items: center;
-
 }
 .MybooksSection1-tab li{
     list-style-type: none;
@@ -39,6 +37,7 @@
     text-decoration: none;
     color: #000;
     font-size: .5rem;
+    text-align: center;
 }
 .normal:hover{
     color: #000;
@@ -68,8 +67,12 @@
     column-gap: 2.5rem;
     row-gap: 2rem;
 }
+.bookTitle{
+
+}
 .MybooksSection1-card{
     width: 100%;
+    height: ;
     /* border: .1rem solid grey; */
 }
 .MybooksSection1-cards-img{
@@ -79,10 +82,11 @@
 }
 
 .cards-innerTitle{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     margin: 1rem 0 0;
-    align-items: center;
+    column-gap: 1rem;
 }
 .cards-innerPrice{
     display: flex;
@@ -102,6 +106,14 @@
     list-style: none;
     text-decoration: none;
     color: #000;
+}
+.bookTitle{
+    font-size: .9rem;
+    font-weight: 700;
+}
+.bookAuthor{
+    font-size: .8rem;
+    color: grey;
 }
 
 .ratingModal{
@@ -137,6 +149,7 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2.5rem;
         row-gap: 2rem;
+        margin: 0 auto;
     }
     .routeText{
         font-size: 1.3rem;
@@ -147,7 +160,7 @@
         width: 90%;
         padding: 0;
         display: grid;
-        justify-items: center;
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
         row-gap: 2rem;
@@ -162,12 +175,24 @@
 }
 @media (max-width: 500px){
     .MybooksSection1-cards{
-        width: 50%;
+        width: 90%;
         padding: 0;
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
         row-gap: 2rem;
+    }
+    .MybooksSection1-tab{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        margin: 2rem 0;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .routeText{
+        font-size: .8rem;
     }
 }

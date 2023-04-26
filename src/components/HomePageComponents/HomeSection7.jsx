@@ -26,12 +26,10 @@ const HomeSection7 = () => {
             <Swiper className='HomeSection7-items'
                  modules={[Navigation, Pagination,]}
                  spaceBetween={10}
-                //  slidesPerView={3}
-                 slidesPerView={window.innerWidth >= 768 ? 3 : 2}
                  loop={false}
                  navigation={{
-                    nextEl:'.swiper-button-next',
-                    prevEl:'.swiper-button-prev',
+                    nextEl:'.swiper-button-nextest',
+                    prevEl:'.swiper-button-prevest',
                     clickable:true,
                 }}
                 breakpoints= {
@@ -93,10 +91,10 @@ const HomeSection7 = () => {
             </Swiper>
 
             <div className='slider-position'>
-                <div className='swiper-button-prev swipe-arrow'>
+                <div className='swiper-button-prevest swipe-arrow'>
                     <AiOutlineLeft className='Hsec2Icon'/>
                 </div>
-                <div className='swiper-button-next swipe-arrow'>
+                <div className='swiper-button-nextest swipe-arrow'>
                     <AiOutlineRight className='Hsec2Icon'/>
                 </div>
                 <div className='swiper-pagination'></div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import DashboardLayout from '../../components/layout/DashboardLayout'
-import MybooksSection1 from '../../components/MyBooksComponents/MybooksSection1'
+import AllBooks from '../../components/MyBooksComponents/AllBooks'
 import MybooksRoute from '../../components/MyBooksComponents/MybooksRoute'
 
 
@@ -16,7 +16,7 @@ const MyBooksPage = () => {
     <div>
         <DashboardLayout>
           <MybooksRoute/>
-          <MybooksSection1/>
+          <AllBooks/>
         </DashboardLayout>
     </div>
   )

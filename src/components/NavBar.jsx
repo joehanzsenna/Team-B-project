@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import {HiOutlineMenu} from 'react-icons/hi';
 import { Link } from "react-router-dom";
 import logo from "../assets/logos_growth-book-icon.png";
 import SignupModal from "./modals/SignupModal";
 import * as bootstrap from "bootstrap/dist/js/bootstrap";
 
 const NavBar = () => {
+  const [menuClick, setMenuClick] = useState('menu')
   const showModal = () => {
     let signupModal = bootstrap.Modal.getOrCreateInstance(
       document.getElementById(`signup-modal`)
@@ -12,17 +14,26 @@ const NavBar = () => {
     signupModal.show();
   };
 
+  function toggleMenu () {
+    if(menuClick === 'menu'){
+      setMenuClick('menu menuActive')
+    }else{
+      setMenuClick('menu')
+    }
+  }
+
   return (
     <div className="Nav">
       <SignupModal />
       <div className="Nav-items">
-        <Link to='/' className="link">
+        <Link to='/' className="logo-link">
           <div className="nav-logo">
               <img src={logo} alt=""  className="main-logo"/>
               <h4 className="nav-logoText">The B<span style={{color:'#3FB2E5'}}>oo</span>kers</h4>
           </div>
         </Link>
-        <ul className="menu">
+        <HiOutlineMenu className="menuIcon" onClick={toggleMenu}/>
+        <ul className={menuClick}>
           <li>
             <Link to="/" className="link">
               Home

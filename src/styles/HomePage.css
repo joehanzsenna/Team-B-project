@@ -588,11 +588,9 @@
 }
 .HomeSection7-items{
     width: 100%;
-    padding: 4rem 0;
-    display: grid;
+    padding: 5rem 0;
     margin-top: 5rem;
-    grid-template-columns: repeat(3,1fr);
-
+    
 }
 .HomeSection7-items-profile{
     background: #F2FBFF;
@@ -600,13 +598,14 @@
     padding: 3rem 1.5rem 1rem;
     text-align: left;
     border-radius: 5px;
-    
+   
 
 }
 .HSec7Images{
     position: absolute;
     top: -2.5rem;
     left: 1rem;
+    
 }
 .HomeSection7-items-inner{
     display: flex;
