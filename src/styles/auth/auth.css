@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+.modal-head {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+.modal-content {
+  padding-top: 30px;
+}
+.btn-close {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.signup-container {
+  margin: 0 auto;
+  border: 2px solid black;
+  font-family: "Manrope", sans-serif;
+  border: white;
+  border-radius: 10px;
+}
+.signup-container input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  color: rgba(132, 133, 134, 1);
+  border: 1px solid grey;
+  box-shadow: 0.2px 0.2px 0.2px grey;
+}
+.create-account {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.create-account span {
+  color: rgba(63, 178, 229, 1);
+}
+.eyediv .login-input {
+  font-weight: 700;
+  
+}
+.signup-container label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.signup-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+.show-eye {
+  position: absolute;
+  right: 7px;
+  top: 13px;
+  color: rgba(63, 178, 229, 1);
+  font-size: 20px;
+}
+.continue-button {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 0px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgba(63, 178, 229, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+}
+.eyediv {
+  position: relative;
+}
+.line {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 2px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.or {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 400;
+}
+.google-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  color: rgba(59, 60, 61, 1);
+  border: 0.1px solid grey;
+  border-radius: 10px;
+}
+.google-btn img {
+  width: 16px;
+  margin-right: 10px;
+}
+.modal-body .account-text {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.03em;
+}
+.modal-body .account-text button {
+  border: none;
+  background-color: white;
+}
+.login-link {
+  color: rgba(63, 178, 229, 1);
+  text-decoration: none;
+}

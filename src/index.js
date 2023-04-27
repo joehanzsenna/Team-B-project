@@ -4,46 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import HomePage from './pages/HomePage';
-import ContactsPage from './pages/ContactsPage';
-import AboutPage from './pages/AboutPage';
-import BlogPage from './pages/BlogPage';
-import GeneralPage from './pages/GeneralPage';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "react-toastify/dist/ReactToastify.css";
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage/>,
-  },
-  {
-    path: "contacts",
-    element: <ContactsPage/>,
-  },
-  {
-    path: "about",
-    element: <AboutPage/>,
-  },
-  {
-    path: "blog",
-    element: <BlogPage/>,
-  },
-  {
-    path: "general",
-    element: <GeneralPage/>,
-  },
-]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 

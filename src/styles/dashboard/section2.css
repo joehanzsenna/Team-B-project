@@ -1,0 +1,53 @@
+.popular-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.popular-container::-webkit-scrollbar {
+  width: 0;
+}
+.viewall-button{
+  border: none;
+  background-color: white;
+  color: rgba(63, 178, 229, 1);
+  font-weight: 600;
+  font-size: 18px;
+}
+.rating-container, .likeicon{
+  font-weight: 700;
+color: rgba(63, 178, 229, 1);
+}
+.booktitle, .bookprice{
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.bookauthor{
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  color: grey;
+}
+.likeicon{
+font-size: 25px;
+font-weight: 900;
+}
+.popular-container .eachbook {
+  min-width: 200px;
+  height: 300px;
+  margin-right: 2px;
+  border-radius: 10px;
+  
+}
+.image-container {
+  width: 100%;
+  height: 200px;
+  /* border-radius: 10px; */
+}
+
+.eachbook img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  
+}
