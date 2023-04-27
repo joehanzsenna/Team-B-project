@@ -9,7 +9,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// toast.configure();
 
 const schema = yup.object().shape({
   userName: yup.string().required("username is required"),
@@ -27,8 +29,6 @@ const Signup = () => {
   const [load, setLoad] = useState();
   const navigate = useNavigate();
 
-
-
   const {
     handleSubmit,
     register,
@@ -39,6 +39,11 @@ const Signup = () => {
   function refreshPage() {
     window.location.reload(true);
   }
+
+  // const notify = () => {
+  //   toast("handling");
+  // };
+
   const handleSubmitForm = async (data) => {
     console.log(data);
     try {
@@ -49,12 +54,24 @@ const Signup = () => {
       );
       console.log(res);
       setLoad(false);
-      <ToastContainer/>
-      // navigate("/login");
-      // refreshPage();
+      <ToastContainer position="top-center"/>
+     
+        toast.success('Successful!')
+
+      // notify();
+      navigate('/dashboard');
+      refreshPage();
     } catch (err) {
       console.log(err.response);
       setLoad(false);
+      // notify()
+      if (err.response.status === 400) {
+        toast.warning('User Exists!')
+      }
+      else{
+        toast.error('Check Network Connection!')
+
+      }
     }
   };
 
@@ -72,6 +89,9 @@ const Signup = () => {
               placeholder="John Doe"
               name="userName"
               {...register(`userName`)}
+              onClick={(e)=>{
+                e.stopPropagation()
+              }}
             />
             <p>{errors?.userName?.message}</p>
           </div>
@@ -86,6 +106,9 @@ const Signup = () => {
               placeholder="example@email.com"
               name="email"
               {...register(`email`)}
+              onClick={(e)=>{
+                e.stopPropagation()
+              }}
             />
             <p>{errors?.email?.message}</p>
           </div>
@@ -100,6 +123,9 @@ const Signup = () => {
                 placeholder="must be 10 characters"
                 name="password"
                 {...register(`password`)}
+                onClick={(e)=>{
+                  e.stopPropagation()
+                }}
               />
               {show ? (
                 <AiFillEye
@@ -133,6 +159,9 @@ const Signup = () => {
                 placeholder=""
                 name="confirmPassword"
                 {...register(`confirmPassword`)}
+                onClick={(e)=>{
+                  e.stopPropagation()
+                }}
               />
               {confirm ? (
                 <AiFillEye
@@ -158,7 +187,7 @@ const Signup = () => {
           <div className="line mt-4">
             <span className="or">or</span>
           </div>
-          <div className="google-btn">
+          <div className="google-btn text-center">
             {" "}
             <img src={googleicon} alt="" />
             Continue with Google

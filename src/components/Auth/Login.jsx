@@ -107,11 +107,11 @@ const Login = () => {
               <div className="line mt-4">
                 <span className="or">or</span>
               </div>
-              <button className="google-btn">
+              <div className="google-btn text-center">
                 {" "}
                 <img src={googleicon} alt="" />
                 Continue with Google
-              </button>
+              </div>
             </div>
           </form>
         </div>
