@@ -53,7 +53,7 @@ const HomeSection7 = () => {
                 
             >
                 <SwiperSlide className='HomeSection7-items-profile'>
-                    <img src={HSec7CircleImg1} alt="" className='HSec7Images'/>
+                    <img src={HSec7CircleImg1} alt="" className='H7Section-img'/>
                     <p className='text2'>A must read book for anyone who is exploring philosophical ideas through a comelling and engaging story and interested in exploring themes such as cultural indifference interested in exploring themes </p>
                     <h3 className='header3'>Adumeta Chinedu</h3>
                     <div className='HomeSection7-items-inner'>

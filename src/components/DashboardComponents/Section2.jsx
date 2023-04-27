@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "../../styles/dashboard/section2.css";
-import { AiFillStar, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+// import { AiFillStar, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import axios from "axios";
 import BookCard from "./BookCard";
 
 const Section2 = () => {

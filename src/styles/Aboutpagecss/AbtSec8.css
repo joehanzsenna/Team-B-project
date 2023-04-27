@@ -43,7 +43,8 @@
 }
 @media (max-width: 991px) {
 .sec8flex33 p{
-  font-size:48%;
+  font: size 15px;
+  /* gap: 20px; */
 }
 }
 
@@ -52,5 +53,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: start;
+    gap: 30px;
+    row-gap: 40px;
   }
 }

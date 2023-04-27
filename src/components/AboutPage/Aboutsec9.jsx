@@ -24,7 +24,7 @@ const Aboutsec9 = () => {
         </div>
         <div className="flexbox">
           <h5>
-            <b style={{ color: "black", width: "5px" }}>Get in Touch Us</b>
+            <b style={{ color: "black", width: "5px" }}>Get in Touch with Us</b>
           </h5>
           <div className="getflex">
             <p>
@@ -48,7 +48,7 @@ const Aboutsec9 = () => {
         </div>
         <div className="flexbox">
           {" "}
-          <img src={map} alt="" width="90%" height="70%" />{" "}
+          <img src={map} alt="" width="100%" height="70%" />{" "}
         </div>
       </div>
     </div>

@@ -46,7 +46,7 @@
   .sec0-1-cont {
     /* border: 4px solid rgb(37, 29, 60); */
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
 }
 
@@ -91,7 +91,6 @@
 }
 @media (max-width: 991px) {
   .sec0-1-img {
-      padding-top: 0%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
