@@ -18,6 +18,7 @@ const schema = yup.object().shape({
 });
 
 const Login = () => {
+  const [show, setShow] = useState(false);
   const [load, setLoad] = useState();
   const navigate = useNavigate();
   const {
@@ -28,6 +29,9 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
+  function refreshPage() {
+    window.location.reload(true);
+  }
   const handleSubmitForm = async (data) => {
     console.log(data);
     try {
@@ -38,13 +42,14 @@ const Login = () => {
       );
       console.log(res);
       // localStorage.setItem("currentUser").JSON.stringify(res.data);
+      navigate('/dashboard')
+      refreshPage()
       setLoad(false);
     } catch (err) {
       setLoad(false);
     }
   };
 
-  const [show, setShow] = useState(false);
 
   return (
     <div className="signup-container container">
