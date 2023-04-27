@@ -3,6 +3,11 @@ utilities
   font-size: 6rem;
   font-weight: 700;
 }
+
+.header1{
+  font-size: 3rem;
+  font-weight: 700;
+}
 .header2 {
   font-size: 2.5;
   font-weight: 800;
@@ -180,7 +185,6 @@ utilities
   /* background-color: red; */
   display: flex;
   justify-content: space-between;
-  display: ;
 }
 .Hsec2IconPosition {
   width: 10rem;

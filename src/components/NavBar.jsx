@@ -6,6 +6,7 @@ import SignupModal from "./modals/SignupModal";
 import * as bootstrap from "bootstrap/dist/js/bootstrap";
 
 const NavBar = () => {
+  const [whenActive, setWhenActive] = useState(0)
   const [menuClick, setMenuClick] = useState('menu')
   const showModal = () => {
     let signupModal = bootstrap.Modal.getOrCreateInstance(
@@ -13,6 +14,9 @@ const NavBar = () => {
     );
     signupModal.show();
   };
+  const toggle = (index) => {
+    setWhenActive(index)
+  }
 
   function toggleMenu () {
     if(menuClick === 'menu'){
@@ -35,12 +39,14 @@ const NavBar = () => {
         <HiOutlineMenu className="menuIcon" onClick={toggleMenu}/>
         <ul className={menuClick}>
           <li>
-            <Link to="/" className="link">
+            <Link to="/" className="link"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="link">
+            <Link to="/about" className="link"
+            >
               About
             </Link>
           </li>
