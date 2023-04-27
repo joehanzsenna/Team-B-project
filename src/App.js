@@ -16,9 +16,22 @@ import MyBooksPage from './pages/Mybookspages/MyBooksPage';
 import PurchasedBooksPage from './pages/Mybookspages/PurchasedBooksPage';
 import BookmarkedBooksPage from './pages/Mybookspages/BookmarkedBooksPage';
 import Error from './components/ErrorPage/Error';
+import { useState } from 'react';
 
 
 function App() {
+//   const [data, setData] = useState({ rate: [] })
+//   useState(() => {
+//     let fetchData = async (url) => {
+//       let respond = await fetch(url)
+//       let newData = await respond.json()
+//       setData({ ...data, rate: newData.data })
+//       console.log(newData.data);
+//     }
+//     fetchData('')
+//   })
+
+
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   fetch("https://bookapi-3arg.onrender.com/all")
@@ -38,6 +51,7 @@ function App() {
   //       console.log(err);
   //     });
   // }, []);
+  
   return (
     <div>
       <BrowserRouter>

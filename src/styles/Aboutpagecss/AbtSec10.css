@@ -5,27 +5,22 @@
   background-image: url("../../assets/HomePageImages/sec10back.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
-  
+  margin-bottom: 100px;
 }
 /* .sec10BodyOuter{
   background-color: grey   ;
 } */
 @media (max-width: 991px) {
   .Sec10body {
-      /* border: 2px solid rgb(0, 255, 102); */
-      background-size: 100%;
-      width: 100%;
-      background-repeat: repeat;
-        /* background-size: 100%; */
-        /* padding-top: 5px; */
-        padding-bottom: 10px;
-        margin-bottom: 75px;
-
-        margin-top: 75px;
-
-
-   
+    /* border: 2px solid rgb(0, 255, 102); */
+    background-size: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    /* background-size: 100%; */
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+    margin-bottom: 75px;
+    /* margin-top: 75px; */
   }
 }
 
@@ -38,7 +33,7 @@
 @media (max-width: 991px) {
   .Sec10flex {
     display: flex;
-    padding: 0px 0px;
+    padding: 10px 10px;
     flex-direction: column;
   }
 }
@@ -50,30 +45,23 @@
 }
 @media (max-width: 991px) {
   .Sec10-p {
-   /* border: 1px solid rgb(234, 131, 131); */
-   width: 70%;
-   margin: 0 auto;
-   text-align: center;
+    /* border: 1px solid rgb(234, 131, 131); */
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
-
-
-
 
 .Sec10-p p {
   font-size: 32px;
   color: white;
 }
 @media (max-width: 991px) {
-  .Sec10-p p{
-     color: rgb(255, 255, 255);
-     font-size: 16px;
-
+  .Sec10-p p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
   }
 }
-
-
-
 
 .sec10flex23 {
   display: flex;
@@ -82,114 +70,81 @@
   border-radius: 10px;
 }
 @media (max-width: 991px) {
-  .sec10flex23{
+  .sec10flex23 {
     margin: 0 auto;
-   
   }
 }
 
-
-
 .sec10flex23 input {
   border: 1px solid white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* width: 400px; */
   padding: 0px 60px;
   height: 5rem;
   font-size: 24px;
+    border-bottom-left-radius: 10px;
+  border-Top-left-radius: 10px;
   background-color: transparent;
+  color: white;
 }
 @media (max-width: 991px) {
   .sec10flex23 input {
-     border: 1px solid rgb(255, 255, 255);
-     font-size: 15px;
-     height: 3rem;
-  /* padding: 0px 0px; */
-         padding: 10px 12px;
-           border-radius: 0px;
-           border-bottom-left-radius: 10px;
-           border-top-left-radius: 10px;
-           border-right-color: #3fb2e5;
-
-
-
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 15px;
+    height: 3rem;
+    /* padding: 0px 0px; */
+    padding: 10px 12px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right-color: #3fb2e5;
   }
 }
 
-
 .sec10flex23 input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .sec10flex23 input::placeholder {
-       color: #ffffff;
-
+    color: #ffffff;
   }
 }
 
 .subscribe {
-    padding: 20px 30px;
+  padding: 20px 30px;
   color: white;
   height: 5rem;
+  /* background-color: #fffefe; */
   background-color: #3fb2e5;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 10px;
+  border-Top-right-radius: 10px;
 }
 @media (max-width: 991px) {
- .subscribe {
-       padding: 12px 12px;
-       font-size: 10px;
-       height: 3rem;
-       border-bottom-right-radius: 10px;
-           border-top-right-radius: 10px;
-           
-
+  .subscribe {
+    padding: 12px 12px;
+    font-size: 10px;
+    height: 3rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
+.subscribe button {
+    font-size: 25px;
+    /* padding-top: 7px; */
+    border: 1px solid #3fb2e5;
+    color: white;
+    background-color: #3fb2e5;
+  }
+
+
 @media (max-width: 991px) {
- .subscribe h4 {
-      font-size: 15px;
-      padding-top: 7px
+  .subscribe button {
+    font-size: 15px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* .sec10flex23 h4 {
@@ -197,7 +152,6 @@
     color: white;
     height: 5rem;
     background-color: #3FB2E5;
-
 } */
 /* @media (max-width: 991px) {
   .Sec10body {
