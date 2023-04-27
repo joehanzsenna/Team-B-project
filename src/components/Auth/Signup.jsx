@@ -8,6 +8,10 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { Spinner } from "react-bootstrap";
+import { useNavigate } from "react-router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// toast.configure();
 
 const schema = yup.object().shape({
   userName: yup.string().required("username is required"),
@@ -23,6 +27,7 @@ const Signup = () => {
   const [show, setShow] = useState(false);
   const [confirm, setConfirm] = useState(false);
   const [load, setLoad] = useState();
+  const navigate = useNavigate();
 
   const {
     handleSubmit,
@@ -31,6 +36,13 @@ const Signup = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
+  function refreshPage() {
+    window.location.reload(true);
+  }
+
+  // const notify = () => {
+  //   toast("handling");
+  // };
 
   const handleSubmitForm = async (data) => {
     console.log(data);
@@ -42,9 +54,24 @@ const Signup = () => {
       );
       console.log(res);
       setLoad(false);
+      <ToastContainer position="top-center"/>
+     
+        toast.success('Successful!')
+
+      // notify();
+      navigate('/dashboard');
+      refreshPage();
     } catch (err) {
       console.log(err.response);
       setLoad(false);
+      // notify()
+      if (err.response.status === 400) {
+        toast.warning('User Exists!')
+      }
+      else{
+        toast.error('Check Network Connection!')
+
+      }
     }
   };
 
@@ -52,109 +79,119 @@ const Signup = () => {
     <div className="signup-container container">
       <div className="container" id="signup">
         <form action="" onClick={handleSubmit(handleSubmitForm)}>
-        <div className="mb-3">
-              <label htmlFor="username" className="d-block">
-                Username
-              </label>
-              <p>{errors?.userName?.message}</p>
+          <div className="mb-3">
+            <label htmlFor="username" className="d-block">
+              Username
+            </label>
 
+            <input
+              type="text"
+              placeholder="John Doe"
+              name="userName"
+              {...register(`userName`)}
+              onClick={(e)=>{
+                e.stopPropagation()
+              }}
+            />
+            <p>{errors?.userName?.message}</p>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="email" className="d-block">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              placeholder="example@email.com"
+              name="email"
+              {...register(`email`)}
+              onClick={(e)=>{
+                e.stopPropagation()
+              }}
+            />
+            <p>{errors?.email?.message}</p>
+          </div>
+
+          <div className="mt-3">
+            <label htmlFor="password" className="d-block">
+              Create a Password
+            </label>
+            <div className="eyediv">
               <input
-                type="text"
-                placeholder="John Doe"
-                name="userName"
-                {...register(`userName`)}
+                type={show ? "text" : "password"}
+                placeholder="must be 10 characters"
+                name="password"
+                {...register(`password`)}
+                onClick={(e)=>{
+                  e.stopPropagation()
+                }}
               />
+              {show ? (
+                <AiFillEye
+                  className="show-eye"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShow(!show);
+                  }}
+                />
+              ) : (
+                <AiFillEyeInvisible
+                  className="show-eye"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShow(!show);
+                  }}
+                />
+              )}
             </div>
+            <p>{errors?.password?.message}</p>
+          </div>
 
-            <div className="mb-3">
-              <label htmlFor="email" className="d-block">
-                Email Address
-              </label>
-              <p>{errors?.email?.message}</p>
+          <div className="mt-3">
+            <label htmlFor="password" className="d-block">
+              Confirm Password
+            </label>
 
+            <div className="eyediv">
               <input
-                type="email"
-                placeholder="example@email.com"
-                name="email"
-                {...register(`email`)}
+                type={confirm ? "text" : "password"}
+                placeholder=""
+                name="confirmPassword"
+                {...register(`confirmPassword`)}
+                onClick={(e)=>{
+                  e.stopPropagation()
+                }}
               />
-            </div>
-
-            <div className="mt-3">
-              <label htmlFor="password" className="d-block">
-                Create a Password
-              </label>
-              <div className="eyediv">
-                <input
-                  type={show ? "text" : "password"}
-                  placeholder="must be 10 characters"
-                  name="password"
-                  {...register(`password`)}
+              {confirm ? (
+                <AiFillEye
+                  className="show-eye"
+                  onClick={() => {
+                    setConfirm(!confirm);
+                  }}
                 />
-                {show ? (
-                  <AiFillEye
-                    className="show-eye"
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      setShow(!show);
-                    }}
-                    />
-                    ) : (
-                      <AiFillEyeInvisible
-                      className="show-eye"
-                      onClick={(e) => {
-                      e.stopPropagation()
-                      setShow(!show);
-                    }}
-                  />
-                )}
-              </div>
-              <p>{errors?.password?.message}</p>
-            </div>
-
-            <div className="mt-3">
-              <label htmlFor="password" className="d-block">
-                Confirm Password
-              </label>
-
-              <div className="eyediv">
-                <input
-                  type={confirm ? "text" : "password"}
-                  placeholder=""
-                  name="confirmPassword"
-                  {...register(`confirmPassword`)}
+              ) : (
+                <AiFillEyeInvisible
+                  className="show-eye"
+                  onClick={() => {
+                    setConfirm(!confirm);
+                  }}
                 />
-                {confirm ? (
-                  <AiFillEye
-                    className="show-eye"
-                    onClick={() => {
-                      setConfirm(!confirm);
-                    }}
-                  />
-                ) : (
-                  <AiFillEyeInvisible
-                    className="show-eye"
-                    onClick={() => {
-                      setConfirm(!confirm);
-                    }}
-                  />
-                )}
-              </div>
-              <p>{errors?.confirmPassword?.message}</p>
+              )}
             </div>
-            <button className="d-block continue-button" type="submit">
-            {!load ? "Login" : <Spinner/> }
-
-            </button>
-            <div className="line mt-4">
-              <span className="or">or</span>
-            </div>
-            <div className="google-btn">
-              {" "}
-              <img src={googleicon} alt="" />
-              Continue with Google
-            </div>
-   
+            <p>{errors?.confirmPassword?.message}</p>
+          </div>
+          <button className="d-block continue-button" type="submit">
+            {!load ? "Sign Up" : <Spinner />}
+          </button>
+          <div className="line mt-4">
+            <span className="or">or</span>
+          </div>
+          <div className="google-btn text-center">
+            {" "}
+            <img src={googleicon} alt="" />
+            Continue with Google
+          </div>
         </form>
       </div>
     </div>
