@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Nav{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 6px lightgrey;
+    height: auto;
+}
+.Nav-items{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+}
+.menuIcon{
+    display: none;
+    font-size: 1.8rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    column-gap: 3rem;
+    text-align: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+.menu li ,.link{
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+ul li:last-child{
+    
+}
+#started{
+    background-color: #3FB2E5;
+    color: white !important;
+    padding: .5rem;
+    border-radius: 4px;
+    border: none;
+
+}
+ul li ,.link:hover{
+    color: #000;
+}
+.logo-link{
+    text-decoration: none;
+    color: #000;
+}
+.main-logo{
+    width: 2.5rem;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logoText{
+    font-weight: 800;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+@media(max-width : 1000px){
+    .menu{
+        position: absolute;
+        width: 100%;
+        background-color: rgba(10, 121, 206, 0.86);
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        padding: 7rem 0;
+        transition: all .5s ease-in-out;
+    }
+    .menu li,.link{
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        /* color: white; */
+    }
+    .menu li:hover, 
+    .link:hover{
+        color: #fff;
+        width: 100%;
+        background-color: #3FB2E5;
+    }
+    .logo-link{
+        text-decoration: none;
+        color: #000;
+    }
+    .menuActive {
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+
+    }
+}
+/* @media(max-width : 500px){
+    .menu{
+        position: absolute;
+        width: 100%;
+        background-color: rgba(10, 121, 206, 0.86);
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        padding: 7rem 0;
+        transition: all .5s ease-in-out;
+    }
+} */

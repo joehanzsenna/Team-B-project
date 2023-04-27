@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+.topbar-container {
+  background-color: rgba(255, 255, 255, 1);
+}
+.search-icon {
+  position: absolute;
+  left: 5px;
+  color: grey;
+}
+.search-container {
+  position: relative;
+}
+.other-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+.bell-icon,
+.filter-icon {
+  background-color: rgba(63, 178, 229, 1);
+  border-radius: 5px;
+  color: white;
+  font-size: 28px;
+  padding: 2px;
+}
+.header-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(59, 60, 61, 1);
+}
+.search-options input {
+  width: 350px;
+  font-size: 13px;
+  padding: 5px 10px 5px 28px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(245, 244, 244, 1);
+}
+.profile-name {
+  font-size: 11px;
+  padding: 5px;
+  width: 100px;
+}
+.profile-details {
+  gap: 10px;
+}
+.down-icon {
+  margin-top: 22px;
+}
+.profile-picture {
+  min-width: 50px;  
+  width: 30%;
+  height: 30%;
+}
+.mobile-search{
+    /* width: 100%; */
+}
+@media(max-width: 768px){
+    .profile-picture{
+        width: 100%;
+    }
+}
