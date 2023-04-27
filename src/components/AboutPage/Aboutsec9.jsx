@@ -24,7 +24,7 @@ const Aboutsec9 = () => {
         </div>
         <div className="flexbox">
           <h5>
-            <b style={{ color: "black", width: "5px" }}>Get in Touch Us</b>
+            <b style={{ color: "black", width: "5px" }}>Get in Touch with Us</b>
           </h5>
           <div className="getflex">
             <p>
