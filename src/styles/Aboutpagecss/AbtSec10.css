@@ -7,6 +7,9 @@
   background-size: 100%;
   margin-bottom: 100px;
 }
+/* .sec10BodyOuter{
+  background-color: grey   ;
+} */
 @media (max-width: 991px) {
   .yoyo {
     /* border: 2px solid rgb(0, 255, 102); */

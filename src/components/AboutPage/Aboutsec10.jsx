@@ -43,6 +43,7 @@ const Aboutsec10 = () => {
         </div>
       </div>
     </div>
+    </div>
   );
 };
 
