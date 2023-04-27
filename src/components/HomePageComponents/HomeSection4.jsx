@@ -23,8 +23,9 @@ const HomeSection4 = () => {
                 <h1 className='header2'>Special Offers</h1>
             </div>
             <Swiper className='HomeSection4-SpecialCards'
-                slidesPerView={4}
+                slidesPerView={3}
                 spaceBetween={10}
+                loop={true}
                 pagination={{ clickable: true}}
                 navigation={{
                     nextEl:'.swiper-button-nextent',
@@ -56,7 +57,7 @@ const HomeSection4 = () => {
                   }
                 modules={[Pagination,Navigation]}
             >
-                <SwiperSlide className='HomeSection4-SpecialCard' >
+                <SwiperSlide className='HomeSection4-SpecialCard shadow-drop' >
                     <div className='Specialcard-images'>
                         <img src={Hsec4Img1} alt="" className='Specialcard-img'/>
                         <div className='Specialcard-image_percent'>30%</div>
@@ -75,7 +76,7 @@ const HomeSection4 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='HomeSection4-SpecialCard' >
+                <SwiperSlide className='HomeSection4-SpecialCard shadow-drop' >
                     <div className='Specialcard-images'>
                         <img src={Hsec4Img2} alt="" className='Specialcard-img'/>
                         <div className='Specialcard-image_percent'>30%</div>
@@ -94,7 +95,7 @@ const HomeSection4 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='HomeSection4-SpecialCard' >
+                <SwiperSlide className='HomeSection4-SpecialCard shadow-drop' >
                     <div className='Specialcard-images'>
                         <img src={Hsec4Img3} alt="" className='Specialcard-img'/>
                         <div className='Specialcard-image_percent'>30%</div>
@@ -113,7 +114,7 @@ const HomeSection4 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='HomeSection4-SpecialCard' >
+                <SwiperSlide className='HomeSection4-SpecialCard shadow-drop' >
                     <div className='Specialcard-images'>
                         <img src={Hsec4Img4} alt="" className='Specialcard-img'/>
                         <div className='Specialcard-image_percent'>30%</div>
@@ -132,7 +133,7 @@ const HomeSection4 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='HomeSection4-SpecialCard' >
+                <SwiperSlide className='HomeSection4-SpecialCard shadow-drop' >
                     <div className='Specialcard-images'>
                         <img src={Hsec4Img4} alt="" className='Specialcard-img'/>
                         <div className='Specialcard-image_percent'>30%</div>

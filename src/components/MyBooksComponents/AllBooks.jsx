@@ -54,7 +54,7 @@ const MybooksSection1 = () => {
             <div className='MybooksSection1-card' key={_id}>
               <img src={image} alt="" className='MybooksSection1-cards-img' />
               <div className='cards-innerTitle'>
-                <h6 className='bookTitle'>{title}</h6>
+                <h6 className='bookTitle'>{(book.title).slice(0,15)}...</h6>
                 <h6><AiFillStar className='cards-innerStarIcon' /> {ratings}</h6>
               </div>
               <h6 className='bookAuthor'>{author}</h6>
@@ -64,7 +64,7 @@ const MybooksSection1 = () => {
                 }} /> : <BsBookmark name={_id} style={{color:'#3FB2E5'}} onClick={() => {
                   changedBookmarkState(book)
                 }} />}
-                <h6>{price}</h6>
+                <h6>N{price}</h6>
               </div>
             </div>
           )

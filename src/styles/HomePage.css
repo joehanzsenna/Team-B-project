@@ -385,6 +385,15 @@ utilities
 .Specialcard-innerDel {
   font-size: 0.6rem;
 }
+/* .shadow-drop{
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+} */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right{
+  display: none;
+}
 
 /* MediaQuerry for HomeSection4  */
 
@@ -579,7 +588,6 @@ utilities
   padding: 4rem 0;
   display: grid;
   margin-top: 5rem;
-  grid-template-columns: repeat(3, 1fr);
 }
 .HomeSection7-items-profile {
   background: #f2fbff;
@@ -588,10 +596,17 @@ utilities
   text-align: left;
   border-radius: 5px;
 }
-.HSec7Images {
-  position: absolute;
-  top: -2.5rem;
+/* .HSec7Images {
+  position: relative;
+  top: -2.9rem;
   left: 1rem;
+  z-index: 2;
+} */
+.H7Section-img{
+  position: absolute;
+  top: -2.9rem;
+  left: 1rem;
+  z-index: 2;
 }
 .HomeSection7-items-inner {
   display: flex;
