@@ -3,7 +3,8 @@ import "../../styles/Aboutpagecss/AbtSec10.css";
 
 const Aboutsec10 = () => {
   return (
-    <div className="Sec10body container">
+    <div className="container-fluid sec10BodyOuter">
+      <div className="Sec10body container">
       <div className="Sec10flex">
         <div className="Sec10-p">
           <p>
@@ -17,6 +18,7 @@ const Aboutsec10 = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
