@@ -1,6 +1,6 @@
-.Sec10body {
-  max-width: 1400px;
-  /* border: 2px solid rgb(0, 255, 102); */
+.yoyo {
+  /* max-width: 1400px; */
+  /* border: 3px solid rgb(175, 74, 35); */
   margin: 0 auto;
   background-image: url("../../assets/HomePageImages/sec10back.png");
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
   margin-bottom: 100px;
 }
 @media (max-width: 991px) {
-  .Sec10body {
+  .yoyo {
     /* border: 2px solid rgb(0, 255, 102); */
     background-size: 100%;
     width: 100%;
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-around;
   padding: 90px 0px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 @media (max-width: 991px) {
   .Sec10flex {
