@@ -13,32 +13,34 @@ const Aboutsec10 = () => {
   }
 
   return (
-    <div className="Sec10body container">
-      <ToastContainer />
-      <div className="Sec10flex">
-        <div className="Sec10-p">
-          <p>Subscribe to our Newsletter for the latest books and updates</p>
-        </div>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            // handleSubmit()
-          }}
-          className="sec10flex23"
-        >
-          <input
-            onChange={(e) => {
-              if (!(e.target.value === "")) {
-                setInput(e.target.value);
-              }
-            }}
-            type="text"
-            placeholder="Your Email Address"
-          />
-          <div className="subscribe">
-            <button>Subscribe</button>
+    <div className="yoyo">
+      <div className="Sec10body container">
+        <ToastContainer />
+        <div className="Sec10flex">
+          <div className="Sec10-p">
+            <p>Subscribe to our Newsletter for the latest books and updates</p>
           </div>
-        </form>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              // handleSubmit()
+            }}
+            className="sec10flex23"
+          >
+            <input
+              onChange={(e) => {
+                if (!(e.target.value === "")) {
+                  setInput(e.target.value);
+                }
+              }}
+              type="text"
+              placeholder="Your Email Address"
+            />
+            <div className="subscribe">
+              <button>Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     
