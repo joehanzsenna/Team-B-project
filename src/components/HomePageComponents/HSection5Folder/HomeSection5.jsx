@@ -45,9 +45,9 @@ const HomeSection5 = () => {
                 slidesPerView={5}
                 centeredSlides={true}
                 spaceBetween={40}
-                pagination={{
-                clickable: true,
-                }}
+                // pagination={{
+                // clickable: true,
+                // }}
                 coverflowEffect={
                     {
                         rotate: 0,

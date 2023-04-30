@@ -86,7 +86,7 @@ ul li ,.link:hover{
         width: 100%;
         margin: 1rem 0;
         padding: 1rem 0;
-        /* color: white; */
+        color: white;
     }
     .menu li:hover, 
     .link:hover{

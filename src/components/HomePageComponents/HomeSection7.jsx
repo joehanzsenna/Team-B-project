@@ -23,7 +23,7 @@ const HomeSection7 = () => {
             <div>
                 <h2 className='header2'>Hear from our Happy Readers</h2>
             </div>
-            <Swiper className='HomeSection7-items'
+            <Swiper className='HomeSec7-ietms'
                  modules={[Navigation, Pagination,]}
                  spaceBetween={10}
                  loop={false}
@@ -49,7 +49,7 @@ const HomeSection7 = () => {
                       slidesPerView: 3
                     },}
                   }
-                 pagination={{ clickable: false }}
+                //  pagination={{ clickable: false }}
                 
             >
                 <SwiperSlide className='HomeSection7-items-profile'>
@@ -58,7 +58,7 @@ const HomeSection7 = () => {
                     <h3 className='header3'>Adumeta Chinedu</h3>
                     <div className='HomeSection7-items-inner'>
                         <p className='text2'>Ui Designer, Apple Inc</p>
-                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.5</h3>
+                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.2</h3>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='HomeSection7-items-profile'>
@@ -67,7 +67,7 @@ const HomeSection7 = () => {
                     <h3 className='header3'>Alisha Gazel</h3>
                     <div className='HomeSection7-items-inner'>
                         <p className='text2'>UX Writer, Google</p>
-                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.5</h3>
+                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.6</h3>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='HomeSection7-items-profile'>
@@ -76,7 +76,7 @@ const HomeSection7 = () => {
                     <h3 className='header3'>Sheriff Baba T</h3>
                     <div className='HomeSection7-items-inner'>
                         <p className='text2'>Front end Developer AirBnB</p>
-                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.5</h3>
+                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>3.5</h3>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='HomeSection7-items-profile'>
@@ -85,7 +85,7 @@ const HomeSection7 = () => {
                     <h3 className='header3'>Sheriff Baba T</h3>
                     <div className='HomeSection7-items-inner'>
                         <p className='text2'>Front end Developer AirBnB</p>
-                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.5</h3>
+                        <h3 className='header3'><AiTwotoneStar className='starIcon'/>4.3</h3>
                     </div>
                 </SwiperSlide>
             </Swiper>

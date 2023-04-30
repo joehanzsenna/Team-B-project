@@ -51,8 +51,8 @@
 }
 .profile-picture {
   min-width: 50px;  
-  width: 30%;
-  height: 30%;
+  /* width: 30%; */
+  /* height: 30%; */
 }
 .mobile-search{
     /* width: 100%; */

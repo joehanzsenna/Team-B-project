@@ -26,7 +26,7 @@ const HomeSection4 = () => {
                 slidesPerView={3}
                 spaceBetween={10}
                 loop={true}
-                pagination={{ clickable: true}}
+                // pagination={{ clickable: true}}
                 navigation={{
                     nextEl:'.swiper-button-nextent',
                     prevEl:'.swiper-button-prevent',

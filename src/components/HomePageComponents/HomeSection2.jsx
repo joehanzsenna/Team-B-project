@@ -33,7 +33,7 @@ const HomeSection2 = () => {
         //       paginationRef.current.innerHTML = current + ' of ' + total;
         //     },}
         // }
-        pagination={{ clickable: true,}} 
+        // pagination={{ clickable: true,}} 
         navigation={{
             nextEl:'.swiper-button-nexting',
             prevEl:'.swiper-button-preview',
